@@ -27,6 +27,7 @@ body {
     color: #3E3A39;
     font-family: NanumSquareRoundR;
     background: none;
+    letter-spacing: -0.5px !important;
 }
 
 /* 로고 */
