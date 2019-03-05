@@ -1,0 +1,125 @@
+body {
+    letter-spacing: -0.05em !important;
+    background: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3) no-repeat;
+    font-family: gulim;
+    height: auto;
+}
+
+#board-info h1>a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header .row>div:nth-child(1)>a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: url(https://upload.tgd.kr/20190302/a2a2c9b….png) no-repeat;
+    background-size: auto 50px;
+}
+
+header .row>div:nth-child(1)>a:after {
+    position: absolute;
+    left: 160px;
+    top: 5px;
+    background-image: url(https://upload.tgd.kr/20190305/9f5429dd3ee12ff17a634f15753bed32.png);
+    background-repeat: no-repeat;
+    background-size: 345px 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    content: "";
+    animation: Hutsori 1s ease-in-out;
+}
+
+@keyframes Hutsori {
+    000.0% {
+        background-image: url(https://upload.tgd.kr/20190305/e7ace32134da1b48f219a23c442063d3.png);
+        background-repeat: no-repeat;
+    }
+    012.5% {
+        background-image: url(https://upload.tgd.kr/20190305/76615e19fe947ea319ba8efc9271bbd0.png);
+        background-repeat: no-repeat;
+    }
+    025.0% {
+        background-image: url(https://upload.tgd.kr/20190305/fb8df34d463ef82449e0a3952bc360b7.png);
+        background-repeat: no-repeat;
+    }
+    037.5% {
+        background-image: url(https://upload.tgd.kr/20190305/4d0e558b57773e60a52517f1c9c1ad76.png);
+        background-repeat: no-repeat;
+    }
+    050.0% {
+        background-image: url(https://upload.tgd.kr/20190305/c592aeb4e5574beacd4ef03708a4ed4b.png);
+        background-repeat: no-repeat;
+    }
+    065.5% {
+        background-image: url(https://upload.tgd.kr/20190305/e94e9dfc1bdc70723efa174560822e48.png);
+        background-repeat: no-repeat;
+    }
+    075.0% {
+        background-image: url(https://upload.tgd.kr/20190305/b43c65d3b4aed1e01d4f8c5c614d172e.png);
+        background-repeat: no-repeat;
+    }
+    087.5% {
+        background-image: url(https://upload.tgd.kr/20190305/ac23a41e02fc12f36b49a6021caa6fa3.png);
+        background-repeat: no-repeat;
+    }
+    100.0% {
+        background-image: url(https://upload.tgd.kr/20190305/9f5429dd3ee12ff17a634f15753bed32.png);
+        background-repeat: no-repeat;
+    }
+}
+
+#viewers-area .fa-user {
+    width: 14px;
+    height: 14px;
+    background-image: url(https://upload.tgd.kr/20190305/67b24ac260a15b2cad31b055d819e06f.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+
+
+#board-info #viewers-area #viewers:before {
+    content: "디갤을 점령중인 ";
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: "명의 보노보노";
+    cursor: text;
+}
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/globalmod.png "] {
+    content: url(https://upload.tgd.kr/20190305/67b24ac260a15b2cad31b055d819e06f.png?raw=true);
+    width: 18px;
+}
+
+header #header-bar>.row:before {
+    position: absolute;
+    right: 230px;
+    content: url(https://upload.tgd.kr/20190305/d671b8d6e7fbc764b3b491866b6f8928.png);
+    top: 70px;
+    z-index: 1000;
+}
+
+
+
+
+
+
+
+
+헛 https://upload.tgd.kr/20190305/e7ace32134da1b48f219a23c442063d3.png
+소 https://upload.tgd.kr/20190305/76615e19fe947ea319ba8efc9271bbd0.png
+리 https://upload.tgd.kr/20190305/fb8df34d463ef82449e0a3952bc360b7.png
+하 https://upload.tgd.kr/20190305/4d0e558b57773e60a52517f1c9c1ad76.png
+지 https://upload.tgd.kr/20190305/c592aeb4e5574beacd4ef03708a4ed4b.png
+마 https://upload.tgd.kr/20190305/e94e9dfc1bdc70723efa174560822e48.png
+임 https://upload.tgd.kr/20190305/b43c65d3b4aed1e01d4f8c5c614d172e.png
+마 https://upload.tgd.kr/20190305/ac23a41e02fc12f36b49a6021caa6fa3.png
+헛소리하지마임마 https://upload.tgd.kr/20190305/9f5429dd3ee12ff17a634f15753bed32.png
+보노보노 https://upload.tgd.kr/20190305/d671b8d6e7fbc764b3b491866b6f8928.png
+보노보노 https://upload.tgd.kr/20190305/67b24ac260a15b2cad31b055d819e06f.png
