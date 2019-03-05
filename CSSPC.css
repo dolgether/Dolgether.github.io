@@ -74,6 +74,7 @@ body {
     font-family: NanumSquareRoundR;
     height: auto !important;
     background: linear-gradient(to bottom, #EEE6C4, #ECE6CC, #F5F5DC);
+    letter-spacing: -0.5px !important;
 }
 
 /* 로고 */
