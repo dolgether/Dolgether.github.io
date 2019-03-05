@@ -96,6 +96,15 @@ header {
 
 /* 접속자 수 */
 
+#viewers-area .fa-user {
+    width: 14px;
+    height: 14px;
+    background-image: url(https://static-cdn.jtvnw.net/badges/v1/573697c9-1e80-4485-94e9-642f7aa82e8e/2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
 #board-info #viewers-area {
     color: #3399CC;
 }
