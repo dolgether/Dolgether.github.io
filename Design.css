@@ -19,7 +19,7 @@ header .row>div:nth-child(1)>a {
 }
 
 header .row>div:nth-child(1)>a>img {
-  display: none;
+    display: none;
 }
 
 header .row>div:nth-child(1)>a:after {
