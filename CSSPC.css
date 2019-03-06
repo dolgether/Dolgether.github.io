@@ -350,14 +350,14 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* 작성자 (스트리머) */
 
 img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url(//upload.tgd.kr/20181231/566c69b79f7fbbd8b01b62296e2ee098.png?raw=true);
+    content: url(//upload.tgd.kr/20181231/566c69b79f7fbbd8b01b62296e2ee098.png?raw=true) !important;
     width: 18px;
 }
 
 /* 작성자 (트게더 관리자) */
 
 img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
-    content: url(//upload.tgd.kr/20181231/a4d14965f3372512d3845f665e1f7955.png?raw=true);
+    content: url(//upload.tgd.kr/20181231/a4d14965f3372512d3845f665e1f7955.png?raw=true) !important;
     width: 18px;
 }
 
