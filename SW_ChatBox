@@ -1,0 +1,90 @@
+body {
+  -webkit-mask-image: rgba(0, 0, 0, 1)
+}
+
+body,
+html {
+  font: $font_sizepx '$font_face', serif;
+  background-color: $background_color;
+  height: 100%;
+  overflow: hidden
+}
+
+#log {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.5em 0.1em;
+  width: 100%;
+  box-sizing: border-box
+}
+
+#log > div {
+  padding: 0.2em 0.5em;
+  margin: -0.3em 0.3em 0.7em 0.3em;
+  border-left: 0.4em solid black;
+  box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.5);
+}
+.reverse #log > div {
+  border-left: none;
+}
+
+.meta {
+  margin-right: -0.5em;
+  font-weight: 700
+}
+
+.message {
+  color: $text_color !important;
+  line-height: 1.5em;
+  margin-top: 0.9em;
+  font-weight: 400
+}
+
+.deleted {
+  visibility: hidden
+}
+
+.badge,
+.colon,
+.name,
+.message {
+  vertical-align: middle
+}
+
+.name:before {
+  content: "[";
+}
+
+.name {
+  color: #ffffff;
+  margin-right: 0.7em;
+}
+
+.name:after {
+  content: "]";
+}
+
+.badge {
+  margin-right: 0.3em;
+  height: 1em
+}
+
+.colon {
+  display: none;
+}
+
+.message > img {
+  height: 1em
+}
+
+.emote_wrap {
+  position: relative
+}
+
+.emoticon {
+  height: $font_sizepx;
+  vertical-align: middle;
+  margin: -0.1em 0;
+  image-rendering: pixelated
+}
