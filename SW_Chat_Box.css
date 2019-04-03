@@ -56,7 +56,6 @@ html {
 #log > div {
   padding: 0.2em 0.5em;
   margin: -0.3em 0.3em 0.7em 0.3em;
-  border-left: 0.4em solid black;
 }
 .reverse #log > div {
   border-left: none;
