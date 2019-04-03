@@ -1,33 +1,3 @@
-body:before {
-  display: block;
-  content: '이곳에 메시지를 입력하세요.';
-  color: #00000080;
-  font-size: 20px;
-  padding: 0.2rem 0 0 0.5rem;
-  position: fixed;
-  bottom: 0.5rem;
-  left: 0.8rem;
-  width: calc(100% - 2.0rem);
-  height: 1.3rem;
-  background: #f5f5dc;
-  border-radius: 0.25rem;
-  z-index: 1000;
-  cursor: text;
-}
-
-body:after {
-  display: block;
-  content: '2019/04/03'; /* 이 부분은 날짜에 맞춰서 수정해야 함 */
-  position: fixed;
-  bottom: 0.5rem;
-  cursor: text;
-  z-index: 1000;
-  color: #00000080;
-  font-size: 20px;
-  right: 1.2rem;
-  height: 1.3rem;
-}
-
 @font-face {
     font-family: 'Binggrae';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
@@ -35,113 +5,119 @@ body:after {
     font-style: normal;
 }
 
-body,
-html {
-  font-size: 24px;
-  font-family: Binggrae;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
-  overflow: hidden;
+body, html {
+    font-size: 24px;
+    font-family: Binggrae;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    overflow: hidden;
+}
+
+body:before {
+    display: block;
+    content: '이곳에 메시지를 입력하세요.';
+    color: #00000080;
+    font-size: 20px;
+    padding: 0.2rem 0 0 0.5rem;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.8rem;
+    width: calc(100% - 2.0rem);
+    height: 1.3rem;
+    background: #f5f5dc;
+    border-radius: 0.25rem;
+    z-index: 1000;
+    cursor: text;
+}
+
+body:after {
+    display: block;
+    content: '2019/04/03'; /* 이 부분은 날짜에 맞춰서 수정해야 함 */
+    position: fixed;
+    bottom: 0.5rem;
+    cursor: text;
+    z-index: 1000;
+    color: #00000080;
+    font-size: 20px;
+    right: 1.2rem;
+    height: 1.3rem;
 }
 
 #log {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 0;
-  padding: 0 0.5em 0.1em;
-  width: 100%;
-  box-sizing: border-box;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    padding: 0 0.5em 0.1em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #log > div {
-  padding: 0.2em 0.5em;
-  margin: -0.3em 0.3em 0.7em 0.3em;
-}
-
-.reverse #log > div {
-  border-left: none;
+    padding: 0.2em 0.5em;
+    margin: -0.3em 0.3em 0.7em 0.3em;
 }
 
 #log > [class=''] {
-  color: #ffffff;
+    color: #ffffff;
 }
-
 .meta {
-  margin-right: -0.5em;
-  font-weight: 700;
-  color: inherit !important;
+    margin-right: -0.5em;
+    font-weight: 700;
+    color: inherit !important;
 }
 
 .message {
-  line-height: 1.5em;
-  margin-top: 0.9em;
-  font-weight: 400;
+    line-height: 1.5em;
+    margin-top: 0.9em;
+    font-weight: 400;
 }
 
 .deleted {
-  visibility: hidden;
+    visibility: hidden;
 }
 
-.badge,
-.colon,
-.name,
-.message {
-  vertical-align: middle;
-}
-
-.name:before {
-  content: "[";
+.badge, .colon, .name, .message {
+    vertical-align: middle;
 }
 
 .name {
-  margin-right: 0.7em;
+    margin-right: 0.7em;
+}
+
+.name:before {
+    content: "[";
 }
 
 .name:after {
-  content: "]";
+    content: "]";
 }
 
 .broadcaster {
-  color: #ff7777;
+    color: #ff7777;
 }
 
 .badge {
-  margin-right: 0.3em;
-  height: 1em;
+    margin-right: 0.3em;
+    height: 1em;
 }
 
 .colon {
-  display: none;
+    display: none;
 }
 
 .message > img {
-  height: 1em;
+    height: 1em;
 }
 
 .emote_wrap {
-  position: relative;
+    position: relative;
 }
 
 .emoticon {
-  height: 24px;
-  vertical-align: middle;
-  margin: -0.1em 0;
-  image-rendering: pixelated;
-}
-
-img.badge.broadcaster-icon {
-    display: none;
-}
-
-.moderator.partner {
-    display: none;
-}
-
-.emoticon {
-  height: 24px;
-  vertical-align: middle;
-  margin: -0.1em 0;
-  image-rendering: pixelated;
+    height: 24px;
+    vertical-align: middle;
+    margin: -0.1em 0;
+    image-rendering: pixelated;
 }
 
 img.badge.broadcaster-icon {
