@@ -57,17 +57,22 @@ html {
   padding: 0.2em 0.5em;
   margin: -0.3em 0.3em 0.7em 0.3em;
 }
+
 .reverse #log > div {
   border-left: none;
+}
+
+#log > [class=''] {
+  color: #ffffff;
 }
 
 .meta {
   margin-right: -0.5em;
   font-weight: 700;
+  color: inherit !important;
 }
 
 .message {
-  color: #ffffff !important;
   line-height: 1.5em;
   margin-top: 0.9em;
   font-weight: 400;
@@ -89,7 +94,6 @@ html {
 }
 
 .name {
-  color: #ffffff;
   margin-right: 0.7em;
 }
 
@@ -116,6 +120,21 @@ html {
 
 .emote_wrap {
   position: relative;
+}
+
+.emoticon {
+  height: 24px;
+  vertical-align: middle;
+  margin: -0.1em 0;
+  image-rendering: pixelated;
+}
+
+img.badge.broadcaster-icon {
+    display: none;
+}
+
+.moderator.partner {
+    display: none;
 }
 
 .emoticon {
