@@ -17,7 +17,7 @@ body:before {
 
 body:after {
   display: block;
-  content: '2019/04/02';
+  content: '2019/??/??'; /* 이 부분은 날짜에 맞춰서 수정해야 함 */
   position: fixed;
   bottom: 0.5rem;
   cursor: text;
@@ -123,4 +123,12 @@ html {
   vertical-align: middle;
   margin: -0.1em 0;
   image-rendering: pixelated;
+}
+
+img.badge.broadcaster-icon {
+    display: none;
+}
+
+.moderator.partner {
+    display: none;
 }
