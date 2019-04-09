@@ -81,6 +81,10 @@ body:after {
     vertical-align: middle;
 }
 
+.badge {
+    display: none;
+}
+
 .name {
     margin-right: 0.7em;
 }
