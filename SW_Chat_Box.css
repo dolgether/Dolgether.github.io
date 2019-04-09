@@ -15,7 +15,7 @@ body, html {
 
 body:before {
     display: block;
-    content: '이곳에 메시지를 입력하세요.';
+    content: '';
     color: #00000080;
     font-size: 20px;
     padding: 0.2rem 0 0 0.5rem;
