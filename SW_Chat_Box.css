@@ -7,10 +7,14 @@
 
 body, html {
     font-size: 24px;
-    font-family: 'Binggrae' !important;
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
     overflow: hidden;
+}
+
+body {
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 
 body:before {
@@ -44,6 +48,8 @@ body:after {
 }
 
 #log {
+    font-family: Binggrae;
+    word-spacing: -2px !important;
     position: absolute;
     bottom: 1.5rem;
     left: 0;
@@ -56,22 +62,29 @@ body:after {
     padding: 0.2em 0.5em;
     margin: -0.3em 0.3em 0.7em 0.3em;
     animation: none;
-    font-family: 'Binggrae' !important;
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 
 #log > [class=''] {
     color: #ffffff;
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 .meta {
     margin-right: -0.5em;
     font-weight: 700;
     color: inherit !important;
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 
 .message {
     line-height: 1.5em;
     margin-top: 0.9em;
     font-weight: 400;
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 
 .deleted {
@@ -88,18 +101,26 @@ body:after {
 
 .name {
     margin-right: 0.7em;
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 
 .name:before {
     content: "[";
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 
 .name:after {
     content: "]";
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 
 .broadcaster {
     color: #ff7777;
+    font-family: Binggrae;
+    word-spacing: -2px !important;
 }
 
 .badge {
