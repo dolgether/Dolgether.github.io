@@ -198,13 +198,65 @@ header #header-bar #header-top-notice strong.notice-badge {
     border: none;
 }
 
+/* 카테고리 */
+
+a.nav-link.active {
+    height: 34px;
+}
+
+#article-list #article-list-category {
+    border-top: 2px solid #FF7863;
+    background: none;
+}
+
+#article-list #article-list-category>a {
+    background: none;
+    color: #ff99b0;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
+    background: #FFF8F7;
+}
+
+a[href="/raora232?category=10854893"]:hover {
+    background: #ffd3d8 !important;
+}
+
+a[href="/raora232?category=12016536"]:hover {
+    background: #ffd3e3 !important;
+}
+
+a[href="/raora232?category=20205014"]:hover {
+    background: #ffefd3 !important;
+}
+
+a[href="/raora232?category=10854885"]:hover {
+    background: #d3e4ff !important;
+}
+
+a[href="/raora232?category=21372728"]:hover {
+    background: #ffe5d3 !important;
+}
+
+a[href="/raora232?category=21218540"]:hover {
+    background: #d5d3ff !important;
+}
+
+a[href="/raora232?category=21218545"]:hover {
+    background: #f5d3ff !important;
+}
+
+a[href="/raora232?category=12342635"]:hover {
+    background: #d3fff1 !important;
+}
+
 /* 게시글 */
 
 #article-list {
     background-image: url(https://dolgether.github.io/articlelistbg.png);
     background-repeat: no-repeat;
     background-size: 300px;
-    background-position: 70% 83%;
+    background-position: 70% 84.7%;
 }
 
 #article-list>.article-list-row:hover {
@@ -304,6 +356,10 @@ header #header-bar #header-top-notice strong.notice-badge {
     border-left: none;
 }
 
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: #FF99B0;
+}
+
 /* 인기글 버튼 */
 
 #article-list #article-list-menu>.btn.best {
@@ -352,13 +408,13 @@ html, body, .fr-popup.emoticons, .fr-top, select.form-control, input[type=checkb
 /* 마우스 커서 링크 */
 
 #right-search-form>#right-search-btn, #board-info #board-info-bottom #addFavoriteBtn, #article-list #article-option-area>#article-option-area-toggle-btn, #article-list>.article-list-row>.item>.list-title>.list-writer>span, .reply > .reply-header > .reply-writer.logged, .reply-menu, .btn, .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-view img, .pull-left, a {
-   cursor: url(https://dolgether.github.io/mouse.png) 0 0, auto !important;
+    cursor: url(https://dolgether.github.io/mouse.png) 0 0, auto !important;
 }
 
 /* 마우스 커서 텍스트 */
 
 span#viewers, #article-list #boardSearchForm .form-control, .fr-view, .fr-box.fr-basic.fr-element, input[type='text'] {
-   cursor: url(https://dolgether.github.io/mouse.png) 0 0, auto !important;
+    cursor: url(https://dolgether.github.io/mouse.png) 0 0, auto !important;
 }
 
 /* 게시글 검색 */
@@ -370,57 +426,6 @@ span#viewers, #article-list #boardSearchForm .form-control, .fr-view, .fr-box.fr
 /* -------------------------------------------- 배열 중 -------------------------------------------- */
 
 
-/* 게시글 관련부분 */
-
-#article-list #article-list-category {
-    border-top: 2px solid #FF7863;
-    background: none;
-}
-
-#article-list #article-list-category>a {
-    background: none;
-    color: #ff99b0;
-}
-
-#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
-    background: #FFF8F7;
-}
-
-#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-    color: #FF99B0;
-}
-
-a[href="/raora232?category=10854893"]:active, a[href="/raora232?category=10854893"]:hover {
-    background: #ffd3d8 !important;
-}
-
-a[href="/raora232?category=12016536"]:active, a[href="/raora232?category=12016536"]:hover {
-    background: #ffd3e3 !important;
-}
-
-a[href="/raora232?category=20205014"]:active, a[href="/raora232?category=20205014"]:hover {
-    background: #ffefd3 !important;
-}
-
-a[href="/raora232?category=10854885"]:active, a[href="/raora232?category=10854885"]:hover {
-    background: #d3e4ff !important;
-}
-
-a[href="/raora232?category=21372728"]:active, a[href="/raora232?category=21372728"]:hover {
-    background: #ffe5d3 !important;
-}
-
-a[href="/raora232?category=21218540"]:active, a[href="/raora232?category=21218540"]:hover {
-    background: #d5d3ff !important;
-}
-
-a[href="/raora232?category=21218545"]:active, a[href="/raora232?category=21218545"]:hover {
-    background: #f5d3ff !important;
-}
-
-a[href="/raora232?category=12342635"]:active, a[href="/raora232?category=12342635"]:hover {
-    background: #d3fff1 !important;
-}
 
 /* 현재 페이지 */
 
@@ -430,54 +435,45 @@ a[href="/raora232?category=12342635"]:active, a[href="/raora232?category=1234263
 }
 
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
-  color: #FF99B0;
+    color: #FF99B0;
 }
 
 .pagination>li>a, .pagination>li>span {
-  color: #FF99B0;
+    color: #FF99B0;
 }
+
+/* 게시글 */
 
 #article-content-wrapper>.header {
-  border-top: 2px solid #FF99B0;
+    border-top: 2px solid #FF99B0;
 }
 
+/* 댓글 */
+
 #article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
-  color: #FF99B0;
+    color: #FF99B0;
 }
 
 #article-info>h2 {
-  font-weight: bold;
-}
-
-#article-info>h2>span.category {
-  color: #FFC2BF !important;
-}
-
-a.nav-link.active {
-    height: 34px;
+    font-weight: bold;
 }
 
 #main .menu-wrapper>a {
-  padding: 0.5em 1.4em 0.5em 0.7em !important;
+    padding: 0.5em 1.4em 0.5em 0.7em !important;
 }
 
 span.a-badge i.fa.fa-info-circle {
-  color: #FFCC7A;
+    color: #FFCC7A;
 }
 
 #article-list>.article-list-row {
-  border-right: none;
+    border-right: none;
 }
 
 #article-list #article-list-menu {
-  box-sizing: border-box;
-  width: unset;
-  margin: 20px;
-}
-
-#article-list #boardSearchForm {
-  padding-bottom: 20px;
-  height: unset;
+    box-sizing: border-box;
+    width: unset;
+    margin: 20px;
 }
 
 /* 작성자 (스트리머=빨간 캠코더) */
@@ -509,85 +505,79 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 .vote-btn[data-type="up"]:hover {
-  background: none !important;
+    background: none !important;
 }
 
 .vote-btn[data-type="up"]::before {
-  display: inline-block;
-  color: #FDAFAB;
-  background: white;
-  border: solid  #FDAFAB 1px;
-  float: left;
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  font-size: 26pt;
-  content: "\f164";
-  padding-top: 17px;
-  padding-left: 2px;
-  font: normal 22px/1 FontAwesome;
-  transition:color .2s ease;
+    display: inline-block;
+    color: #FDAFAB;
+    background: white;
+    border: solid  #FDAFAB 1px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 26pt;
+    content: "\f164";
+    padding-top: 17px;
+    padding-left: 2px;
+    font: normal 22px/1 FontAwesome;
+    transition:color .2s ease;
 }
 
 .vote-btn[data-type="up"]:hover::before {
-  background:  #FDAFAB;
-  color: white;
+    background:  #FDAFAB;
+    color: white;
 }
 
 .vote-btn[data-type="up"] span {
-  float: left;
-  padding-top: 14px;
-  padding-left: 15px;
-  font-size: 22px;
-  color:  #FDAFAB;
+    float: left;
+    padding-top: 14px;
+    padding-left: 15px;
+    font-size: 22px;
+    color:  #FDAFAB;
 }
 
 /* 비추 버튼 */
 
 .vote-btn[data-type="down"] {
-  border: none;
-  font-size: 0;
-  outline: 0 !important; 
+    border: none;
+    font-size: 0;
+    outline: 0 !important; 
 }
 
 .vote-btn[data-type="down"]:hover {
-  background: none !important;
+    background: none !important;
 }
 
 .vote-btn[data-type="down"]::before {
-  display: inline-block;
-  background: white;
-  color: #B6E3E9;
-  border: solid  #B6E3E9 1px;
-  float: left;
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  font-size: 26pt;
-  content: "\f164";
-  padding-top: 17px;
-  padding-left: 2px;
-  font: normal 22px/1 FontAwesome;
-  transition:color .2s ease;
+    display: inline-block;
+    background: white;
+    color: #B6E3E9;
+    border: solid  #B6E3E9 1px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 26pt;
+    content: "\f164";
+    padding-top: 17px;
+    padding-left: 2px;
+    font: normal 22px/1 FontAwesome;
+    transition:color .2s ease;
 }
 
 .vote-btn[data-type="down"]:hover::before {
-  background:  #B6E3E9;
-  color: white;
+    background:  #B6E3E9;
+    color: white;
 }
 
 .vote-btn[data-type="down"] span {
-  float: left;
-  padding-top: 14px;
-  padding-left: 15px;
-  font-size: 22px;
-  color:  #B6E3E9;
-}
-
-/*스크롤*/
-
-#movetotop img {
-    display:none
+    float: left;
+    padding-top: 14px;
+    padding-left: 15px;
+    font-size: 22px;
+    color:  #B6E3E9;
 }
 
 /* 페이지 맨 위로 */
@@ -599,6 +589,10 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
     height: 80px;
 }
 
+#movetotop img {
+    display:none
+}
+
 /* 댓글 테두리 */
 
 #article-reply-area #reply-real-area .reply, #article-reply-area #reply-best-area .reply {
@@ -608,4 +602,29 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 #article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header {
     border: 3px solid #FFC2BF;
     border-radius: 15px;
+}
+
+/* 채신기술 */
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.05);
+    transition: .1s;
+}
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border-radius: 15px;
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
 }
