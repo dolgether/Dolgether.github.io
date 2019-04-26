@@ -1,24 +1,10 @@
 /* 모듈 */
 
 @font-face {
-  font-family: 'NanumSquareRoundR';
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundR.woff) format('woff')
-}
-
-@font-face {
-  font-family: 'NanumSquareRoundEB';
-  font-style: normal;
-  font-weight: 700;
-  src: url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff2) format('woff2'), url(//cdn.jsdelivr.net/npm/typeface-nanum-square-round@1.0.1/NanumSquareRoundEB.woff) format('woff')
-}
-
-@font-face {
-  font-family: 'GodoM';
-  font-style: normal;
-  font-weight: 400;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
 }
 
 @keyframes Pudding {
@@ -71,10 +57,11 @@
 
 body {
     color: #3E3A39;
-    font-family: NanumSquareRoundR;
+    font-family: D2Coding;
     height: auto !important;
     background: linear-gradient(to bottom, #EEE6C4, #ECE6CC, #F5F5DC);
-    letter-spacing: -0.5px !important;
+    letter-spacing: -.5px !important;
+    word-spacing: -4px !important;
 }
 
 /* 로고 */
@@ -83,7 +70,7 @@ header .row>div:nth-child(1)>a {
     display: block;
     width: 145px;
     height: 50px;
-    background: url(//upload.tgd.kr/20181231/abd98415f898a8ac89f964858ef411fc.png) no-repeat;
+    background: url(https://dolgether.github.io/abd98415f898a8ac89f964858ef411fc.png) no-repeat;
     background-size: auto 50px;
     animation: Pudding 1s 10 linear;
 }
@@ -187,8 +174,8 @@ header #header-bar #header-top-notice strong.notice-badge {
 #main .menu-wrapper>.header {
     background: #3E3A39;
     border-radius: 15px 15px 0 0;
-    font-family: GodoM;
-    font-weight: normal;
+    font-family: D2Coding;
+    font-weight: bold;
 }
 
 /* 좌측 배너 이니셜 */
@@ -248,18 +235,19 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 #board-info h1 {
     border-bottom: 1px solid #3E3A39;
-    padding-left: 101px;
+    margin-left: 101px;
 }
 
 #board-info #board-info-bottom {
-    padding-left: 101px;
+    margin-left: 101px;
 }
 
 /* 메인 배너 스트리머 닉네임 */
 
 #board-info h1>a {
     color: #3E3A39;
-    font-family: GodoM;
+    font-family: D2Coding;
+    font-weight: Bold;
 }
 
 /* 메인 배너 순위 */
@@ -273,7 +261,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 #viewers-area .fa-user {
     width: 14px;
     height: 14px;
-    background-image: url(https://static-cdn.jtvnw.net/badges/v1/573697c9-1e80-4485-94e9-642f7aa82e8e/2);
+    background-image: url(https://static-cdn.jtvnw.net/badges/v1/573697c9-1e80-4485-94e9-642f7aa82e8e/3);
     background-size: cover;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -316,10 +304,87 @@ header #header-bar #header-top-notice strong.notice-badge {
     background: none;
 }
 
+/* 메인 배너 글 */
+
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
+    border: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#article-list>.article-list-row {
+    border-right: none;
+}
+
 /* 메인 배너 글 공지 */
 
 #article-list>.article-list-row.notice {
     background-color: #F5F5DC;
+}
+
+#article-list-row-13981722 {
+    background: url(https://dolgether.github.io/pala1.png) no-repeat;
+    background-position: 453px;
+    height: 35px;
+}
+
+#article-list-row-13981722:hover {
+    background-image: url(https://dolgether.github.io/pala1.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 453px !important;
+    height:35px !important;
+}
+
+#article-list-row-13981333 {
+    background: url(https://dolgether.github.io/pala2.png) no-repeat;
+    background-position: 450px;
+    height:35px;
+}
+
+#article-list-row-13981333:hover {
+    background-image: url(https://dolgether.github.io/pala2.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 450px !important;
+    height:35px !important;
+}
+
+#article-list-row-13981156 {
+    background: url(https://dolgether.github.io/pala3.png) no-repeat;
+    background-position: 450px;
+    height:35px;
+}
+
+#article-list-row-13981156:hover {
+    background-image: url(https://dolgether.github.io/pala3.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 450px !important;
+    height:35px !important;
+}
+
+#article-list-row-13980133 {
+    background: url(https://dolgether.github.io/pala4.png) no-repeat;
+    background-position: 450px;
+    height:35px;
+}
+
+#article-list-row-13980133:hover {
+    background-image: url(https://dolgether.github.io/pala4.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 450px !important;
+    height:35px !important;
+}
+
+#article-list-row-13978489 {
+    background: url(https://dolgether.github.io/pala5.png) no-repeat;
+    background-position: 450px;
+    height:35px;
+}
+
+#article-list-row-13978489:hover {
+    background-image: url(https://dolgether.github.io/pala5.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 450px !important;
+    height:35px !important;
 }
 
 /* 글 추천 수 */
@@ -350,15 +415,15 @@ header #header-bar #header-top-notice strong.notice-badge {
 /* 작성자 (스트리머) */
 
 img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url(//upload.tgd.kr/20181231/566c69b79f7fbbd8b01b62296e2ee098.png?raw=true) !important;
+    content: url(https://static-cdn.jtvnw.net/badges/v1/28a87fd6-0f19-46e3-ab9c-20cf1f5f26c0/3?raw=true) !important;
     width: 18px;
 }
 
 /* 작성자 (트게더 관리자) */
 
 img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
-    content: url(//upload.tgd.kr/20181231/a4d14965f3372512d3845f665e1f7955.png?raw=true) !important;
-    width: 18px;
+    content: url(https://dolgether.github.io/a4d14965f3372512d3845f665e1f7955.png?raw=true) !important;
+    width: 17px;
 }
 
 /* 인기글 버튼 */
@@ -433,7 +498,8 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 /* 게시글 카테고리 */
 
 #article-info>h2>span.category {
-    font-family: GodoM;
+    font-family: D2Coding;
+    font-weight: bold;
 }
 
 /* 목록 버튼 */
@@ -476,4 +542,54 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a, #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a {
     color: #3399CC;
+}
+
+/* 이모티콘 변경 */
+
+.fr-command.fr-emoticon[data-param1=JKanStyle] > img { 
+     width: 27px !important; 
+     height: 27px !important; 
+     padding-left: 27px;
+     background-image: url(https://static-cdn.jtvnw.net/badges/v1/573697c9-1e80-4485-94e9-642f7aa82e8e/3);
+     background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable > img[alt=JKanStyle]{ 
+     width: 27px !important; 
+     height: 27px !important; 
+     padding-left: 27px;
+     background-image: url(https://static-cdn.jtvnw.net/badges/v1/573697c9-1e80-4485-94e9-642f7aa82e8e/3);
+     background-size: 100%; 
+}
+
+.fr-command.fr-emoticon[data-param1=OptimizePrime] > img { 
+     width: 27px !important; 
+     height: 27px !important; 
+     padding-left: 27px;
+     background-image: url(https://static-cdn.jtvnw.net/badges/v1/4ce4b2d5-9a6b-46c0-88ee-c1f9c06dbae9/3);
+     background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable > img[alt=OptimizePrime]{ 
+     width: 27px !important; 
+     height: 27px !important; 
+     padding-left: 27px;
+     background-image: url(https://static-cdn.jtvnw.net/badges/v1/4ce4b2d5-9a6b-46c0-88ee-c1f9c06dbae9/3);
+     background-size: 100%; 
+}
+
+.fr-command.fr-emoticon[data-param1=StoneLightning] > img { 
+     width: 27px !important; 
+     height: 27px !important; 
+     padding-left: 27px;
+     background-image: url(https://static-cdn.jtvnw.net/badges/v1/28a87fd6-0f19-46e3-ab9c-20cf1f5f26c0/3);
+     background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable > img[alt=StoneLightning]{ 
+     width: 27px !important; 
+     height: 27px !important; 
+     padding-left: 27px;
+     background-image: url(https://static-cdn.jtvnw.net/badges/v1/28a87fd6-0f19-46e3-ab9c-20cf1f5f26c0/3);
+     background-size: 100%; 
 }
