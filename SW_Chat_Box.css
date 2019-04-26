@@ -7,7 +7,7 @@ body, html {
 
 body:before {
     display: block;
-    content: '';
+    content: '이 곳에 메시지를 입력하세요.';
     color: #00000080;
     font-size: 20px;
     padding: 0.2rem 0 0 0.5rem;
@@ -20,19 +20,6 @@ body:before {
     border-radius: 0.25rem;
     z-index: 1000;
     cursor: text;
-}
-
-body:after {
-    display: block;
-    content: '2019/04/25'; /* 이 부분은 날짜에 맞춰서 수정해야 함 */
-    position: fixed;
-    bottom: 0.5rem;
-    cursor: text;
-    z-index: 1000;
-    color: #00000080;
-    font-size: 20px;
-    right: 1.2rem;
-    height: 1.3rem;
 }
 
 #log {
