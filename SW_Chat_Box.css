@@ -6,7 +6,7 @@ body, html {
 }
 
 body:before {
-    font: 10px 'Binggrae', serif;
+    font: 14px 'Binggrae', serif;
     display: block;
     content: '이 곳에 메시지를 입력하세요.';
     color: #00000080;
