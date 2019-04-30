@@ -6,10 +6,10 @@ body, html {
 }
 
 body:before {
+    font: 10px 'Binggrae', serif;
     display: block;
     content: '이 곳에 메시지를 입력하세요.';
     color: #00000080;
-    font-size: 20px;
     padding: 0.2rem 0 0 0.5rem;
     position: fixed;
     bottom: 0.5rem;
