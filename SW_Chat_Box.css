@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'KHNPHU';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHU.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
     font-size: 24px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -6,7 +13,7 @@ body, html {
 }
 
 body:before {
-    font: 14px 'Binggrae', serif;
+    font: 14px 'KHNPHU';
     display: block;
     content: '이 곳에 메시지를 입력하세요.';
     color: #00000080;
@@ -23,7 +30,7 @@ body:before {
 }
 
 #log {
-    font: 0.8em 'Binggrae', serif;
+    font: 0.8em 'KHNPHU';
     word-spacing: -2px !important;
     position: absolute;
     bottom: 1.5rem;
