@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+html {
+    background: #1c1c1c;
+    font-family: 'Binggrae';
+}
+
+body {
+    background: transparent;
+}
+
+header #right-search-form>input[type=text] {
+    border: 3px solid #bdbdbd;
+    border-radius: 25px;
+}
+
+header #right-search-form>#right-search-btn {
+    color: #bdbdbd;
+}
+
+header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame {
+    border-radius: 25px;
+}
+
+header #header-bar>.row {
+    border: 3px solid #bdbdbd;
+}
+
+.dropdown-menu>li>a {
+    transition: .1s;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.05);
+    transition: .1s;
+}
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border-radius: 15px;
+}
