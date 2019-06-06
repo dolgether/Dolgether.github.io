@@ -11,11 +11,11 @@
 
 html {
     background: #1c1c1c;
-    font-family: 'Binggrae';
 }
 
 body {
     background: transparent;
+    font-family: 'Binggrae';
 }
 
 header #right-search-form>input[type=text] {
@@ -50,4 +50,86 @@ header #header-bar>.row {
     opacity: unset;
     transform: unset;
     border-radius: 15px;
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+header #header-bar #header-top-notice strong.notice-badge {
+    background: #1c1c1c;
+}
+
+#main .menu-wrapper>a {
+    border: none;
+}
+
+#main .menu-wrapper {
+    border: none;
+}
+
+#main .menu-wrapper>.header {
+    border: 3px solid #bdbdbd;
+    border-radius: 25px;
+    background: #ffffff;
+    color: #1c1c1c;
+}
+
+#main .menu-wrapper>.header>a {
+    color: #1c1c1c;
+}
+
+#main .menu-wrapper>a {
+    background: none;
+    color: #ffffff;
+}
+
+#main .menu-wrapper .spacer {
+    background: none;
+    height: 0px;
+}
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    display: none;
+}
+
+#main #main-content>div.frame {
+    border: 3px solid #bdbdbd;
+}
+
+#board-info {
+    overflow: visible;
+}
+
+#board-info h1 {
+    margin-left: 105px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+#board-info #board-info-bottom {
+    margin-left: 105px;
+}
+
+#board-info h1>a {
+    font-weight: 700;
+    font-size: 0;
+}
+
+#board-info h1>a:before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    background-size: 100px auto;
+    top: -5px;
+    background-image: url(https://cdn.discordapp.com/attachments/585807659417075732/586028694301310976/bitcoin_PNG16.png);
+    border-radius: 100px;
+    left: 30px;
 }
