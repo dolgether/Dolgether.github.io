@@ -12,7 +12,8 @@ req = requests.get('https://tgd.kr/maruko_zzang')
 html = req.text
 soup = BeautifulSoup(html, 'html.parser')
 posts = soup.select('#article-list>.article-list-row>.item>.list-title>a')
-writer = soup.select('#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span')
+writer = soup.select('#article-list>.article-list-row>.item>.list-title>.list-writer>span')
+                      # 코드에 살짝 오류가 있어서 수정했습니다
     
 for i in range(9, 13):
     tgd_url = posts[i].get('href')
