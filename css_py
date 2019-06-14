@@ -1,0 +1,487 @@
+from os import path
+from tkinter import filedialog
+from tkinter import messagebox
+from tkinter import ttk
+import random
+import tkinter
+
+# GUI
+
+GUI = tkinter.Tk()
+GUI.title("Custom CSS")
+
+Posx = int(GUI.winfo_screenwidth() / 2 - 350)
+Posy = int(GUI.winfo_screenheight() / 3 - 225)
+
+GUI.geometry("700x450+{}+{}".format(Posx, Posy))
+GUI.resizable(0,0)
+
+# MainColor
+
+def popupMC():
+    messagebox.showwarning(title = "Main Color", message = "Set the Main Color")
+
+def outfocus1():
+    LOF1.focus_set()
+
+def MCB():
+    MCol = MC.get()
+
+    try:
+        MClabel.config(text = str(MCol), foreground = MCol)
+
+    except:
+        popupMC()
+
+    else:
+        MCButton.config(text = "Edit")
+
+        outfocus1()
+
+def MCE(event):
+    MCB()
+
+FMC = tkinter.Frame(GUI, padx = 5, pady = 5)
+FMC.place(x = 0, y = 0, width = 350, height = 70)
+
+ExplainMC = tkinter.Label(FMC, text = "Main Color :", anchor = "w")
+ExplainMC.place(x = 0, y = 30, width = 125, height = 24)
+
+MC = tkinter.Entry(FMC)
+MC.bind("<Return>", MCE)
+MC.place(x = 130, y = 30, width = 150, height = 24)
+
+MCButton = tkinter.Button(FMC, overrelief = "sunken", width = 3, command = MCB, repeatdelay = 100, text = "Set", takefocus = 0)
+MCButton.place(x = 300, y = 27, width = 30, height = 30)
+
+MClabel = tkinter.Label(FMC, text = "")
+MClabel.place(x = 125, y = 0, width = 100, height = 24)
+
+LOF1 = tkinter.Label(GUI)
+LOF1.place(x = 0, y = 0, width = 0, height = 0)
+
+# BackgroundColor
+
+def popupBGC():
+    messagebox.showwarning(title = "Background Color", message = "Set the Background Color")
+
+def outfocus2():
+    LOF2.focus_set()
+
+def BGCB():
+    try:
+        BGCol = BGC.get()
+
+        BGClabel.config(text = str(BGCol), fg = BGCol)
+
+        BGCButton.config(text = "Edit")
+
+        outfocus2()
+
+    except:
+        popupBGC()
+
+def BGCE(event):
+    BGCB()
+
+BGCF = tkinter.Frame(GUI, padx = 5, pady = 5)
+BGCF.place(x = 0, y = 70, width = 350, height = 70)
+
+ExplainBGC = tkinter.Label(BGCF, text = "Background Color :", anchor = "w")
+ExplainBGC.place(x = 0, y = 30, width = 125, height = 24)
+
+BGC = tkinter.Entry(BGCF)
+BGC.bind("<Return>", BGCE)
+BGC.place(x = 130, y = 30, width = 150, height = 24)
+
+BGCButton = tkinter.Button(BGCF, overrelief = "sunken", width = 3, command = BGCB, repeatdelay = 100, text = "Set", takefocus = 0)
+BGCButton.place(x = 300, y = 27, width = 30, height = 30)
+
+BGClabel = tkinter.Label(BGCF, text = "")
+BGClabel.place(x = 125, y = 0, width = 100, height = 24)
+
+LOF2 = tkinter.Label(GUI)
+LOF2.place(x = 0, y = 0, width = 0, height = 0)
+
+# NoticeColor
+
+def popupNTC():
+    messagebox.showwarning(title = "Notice Color", message = "Set the Notice Color")
+
+def outfocus3():
+    LOF3.focus_set()
+
+def NTCB():
+    try:
+        NTCol = NTC.get()
+
+        NTClabel.config(text = str(NTCol), fg = NTCol)
+
+        NTCButton.config(text = "Edit")
+
+        outfocus3()
+
+    except:
+        popupNTC()
+
+def NTCE(event):
+    NTCB()
+
+NTCF = tkinter.Frame(GUI, padx = 5, pady = 5)
+NTCF.place(x = 0, y = 140, width = 350, height = 70)
+
+ExplainNTC = tkinter.Label(NTCF, text = "Notice Color :", anchor = "w")
+ExplainNTC.place(x = 0, y = 30, width = 125, height = 24)
+
+NTC =tkinter.Entry(NTCF)
+NTC.bind("<Return>", NTCE)
+NTC.place(x = 130, y = 30, width = 150, height = 24)
+
+NTCButton = tkinter.Button(NTCF, overrelief = "sunken", width = 3, command = NTCB, repeatdelay = 100, text = "Set", takefocus = 0)
+NTCButton.place(x = 300, y = 27, width = 30, height = 30)
+
+NTClabel = tkinter.Label(NTCF, text = "")
+NTClabel.place(x = 125, y = 0, width = 100, height = 24)
+
+LOF3 = tkinter.Label(GUI)
+LOF3.place(x = 0, y = 0, width = 0, height = 0)
+
+# Logo
+
+def outfocus4():
+    LOF4.focus_set()
+
+def LB():
+    LogoButton.config(text = "Edit")
+
+    outfocus4()
+
+def LE(event):
+    LB()
+
+LogoF = tkinter.Frame(GUI, padx = 5, pady = 5)
+LogoF.place(x = 0, y = 210, width = 350, height = 70)
+
+Logolabel = tkinter.Label(LogoF, text = "Logo Url :", anchor = "w")
+Logolabel.place(x = 0, y = 30, width = 125, height = 24)
+
+LogoUrl = tkinter.Entry(LogoF)
+LogoUrl.bind("<Return>", LE)
+LogoUrl.place(x = 130, y = 30, width = 150, height = 24)
+
+LogoButton = tkinter.Button(LogoF, overrelief = "sunken", command = LB, repeatdelay = 100, text = "Set", takefocus = 0)
+LogoButton.place(x = 300, y = 27, width = 30, height = 30)
+
+LOF4 = tkinter.Label(GUI)
+LOF4.place(x = 0, y = 0, width = 0, height = 0)
+
+# Fonts
+
+
+font1 = "나눔고딕"
+font2 = "나눔바른고딕"
+font3 = "빙그레체"
+font4 = "애터미체"
+font5 = "이롭게바탕체"
+font6 = "한돋움체"
+font7 = "한울림체"
+
+
+
+Font_List = [font1, font2, font3, font4, font5, font6, font7]
+
+FontF = tkinter.Frame(GUI, padx = 5, pady = 5)
+FontF.place(x = 0, y = 280, width = 350, height = 70)
+
+Fontlabel = tkinter.Label(FontF, text = "Font :", anchor = "w")
+Fontlabel.place(x = 0, y = 30, width = 125, height = 24)
+
+FontsList = ttk.Combobox(FontF, values = Font_List, state = "readonly")
+FontsList.set("Fonts")
+FontsList.place(x = 130, y = 30, width = 150, height = 24)
+
+# Rounding
+
+round1 = "none"
+round2 = "harder"
+round3 = "hard"
+round4 = "normal"
+round5 = "soft"
+round6 = "softer"
+
+Rounding_List = [round1, round2, round3, round4, round5, round6]
+
+RoundingF = tkinter.Frame(GUI, padx = 5, pady = 5)
+RoundingF.place(x = 0, y = 350, width = 350, height = 70)
+
+Roundinglabel = tkinter.Label(RoundingF, text = "Rounding Style :", anchor = "w")
+Roundinglabel.place(x = 0 , y = 30, width = 125, height = 24)
+
+RoundingList = ttk.Combobox(RoundingF, values = Rounding_List, state = "readonly")
+RoundingList.set("Rounding Style")
+RoundingList.place(x = 130, y = 30, width = 150, height =24)
+
+# Viewers:Before
+
+def outfocus5():
+    LOF5.focus_set()
+
+def VBB():
+    ViewersBeforeButton.config(text = "Edit")
+
+    outfocus5()
+
+def VBE(event):
+    VBB()
+
+VBF = tkinter.Frame(GUI, padx = 5, pady = 5)
+VBF.place(x = 350, y = 0, width = 350, height = 70)
+
+ViewersBeforelabel = tkinter.Label(VBF, text = "Viewers Before :", anchor = "w")
+ViewersBeforelabel.place(x = 0, y = 30, width = 125, height = 24)
+
+ViewersBefore = tkinter.Entry(VBF)
+ViewersBefore.bind("<Return>", VBE)
+ViewersBefore.place(x = 130, y = 30, width = 150, height = 24)
+
+ViewersBeforeButton = tkinter.Button(VBF, overrelief = "sunken", command = VBB, repeatdelay = 100, text = "Set", takefocus = 0)
+ViewersBeforeButton.place(x = 300, y = 27, width = 30, height = 30)
+
+LOF5 = tkinter.Label(GUI)
+LOF5.place(x = 0, y = 0, width = 0, height = 0)
+
+# Viewers:After
+
+def outfocus6():
+    LOF6.focus_set()
+
+def VAB():
+    ViewersAfterButton.config(text = "Edit")
+
+    outfocus6()
+
+def VAE(event):
+    VAB()
+
+VAF = tkinter.Frame(GUI, padx = 5, pady = 5)
+VAF.place(x = 350, y = 70, width = 350, height = 70)
+
+ViewersAfterlabel = tkinter.Label(VAF, text = "Viewers After :", anchor = "w")
+ViewersAfterlabel.place(x = 0, y = 30, width = 125, height = 24)
+
+ViewersAfter = tkinter.Entry(VAF)
+ViewersAfter.bind("<Return>", VAE)
+ViewersAfter.place(x = 130, y = 30, width = 150, height = 24)
+
+ViewersAfterButton = tkinter.Button(VAF, overrelief = "sunken", command = VAB, repeatdelay = 100, text = "Set", takefocus = 0)
+ViewersAfterButton.place(x = 300, y = 27, width = 30, height = 30)
+
+LOF6 = tkinter.Label(GUI)
+LOF6.place(x = 0, y = 0, width = 0, height = 0)
+
+def VB():
+    n = random.randint(1,100)
+
+    VBStr = ViewersBefore.get()
+
+    VAStr = ViewersAfter.get()
+
+    Viewers.config(text = str(VBStr) + str(n) + str (VAStr))
+
+VF = tkinter.Frame(GUI, padx = 5, pady = 5)
+VF.place(x = 350, y = 140, width = 350, height = 70)
+
+Viewers = tkinter.Label(VF, text = "", anchor = "w")
+Viewers.place(x = 0, y = 30, width = 260, height = 24)
+
+ViewersButton = tkinter.Button(VF, overrelief = "sunken", command = VB, repeatdelay = 100, text = "Preview", takefocus = 0)
+ViewersButton.place(x = 270, y = 27, width = 60, height = 30)
+
+
+# ProfileImg
+
+def PImg():
+    PFImg = ProfileImg.get()
+
+    ProfileImglabel.config(text = str(PFImg) + " is selected")
+
+ProfileImg = tkinter.StringVar()
+
+PIF = tkinter.Frame(GUI, padx = 5, pady = 5)
+PIF.place(x = 350, y = 210, width = 350, height = 70)
+
+ProfileImgN = tkinter.Radiobutton(PIF, text = "None", value = "none", variable = ProfileImg, command = PImg, anchor = "w")
+ProfileImgN.select()
+ProfileImgN.place(x = 30, y = 30, width = 70, height = 24)
+
+ProfileImgL = tkinter.Radiobutton(PIF, text ="Left", value = "left", variable = ProfileImg, command = PImg, anchor = "w")
+ProfileImgL.deselect()
+ProfileImgL.place(x = 135, y = 30, width = 70, height = 24)
+
+ProfileImgR = tkinter.Radiobutton(PIF, text = "Right", value = "right", variable = ProfileImg, command = PImg, anchor = "w")
+ProfileImgR.deselect()
+ProfileImgR.place(x = 240, y = 30, width = 70, height = 24)
+
+ProfileImglabel = tkinter.Label(PIF, text = "Select ProfileImg Position")
+ProfileImglabel.place(x = 85, y = 0, width = 160, height = 24)
+
+# Desttop or Mobile
+
+def DM():
+    DoM = DesktoporMobile.get()
+
+    DesktoporMobilelabel.config(text = str(DoM) + " is selected")
+
+DesktoporMobile = tkinter.StringVar()
+
+DoMF = tkinter.Frame(GUI, padx = 5, pady = 5)
+DoMF.place(x = 350, y = 280, width = 350, height = 70)
+
+SDesktop = tkinter.Radiobutton(DoMF, text = "Desktop", value = "desktop", variable = DesktoporMobile, command = DM, anchor = "w")
+SDesktop.select()
+SDesktop.place(x = 70, y = 30, width = 80, height = 24)
+
+SMobile = tkinter.Radiobutton(DoMF, text = "Mobile", value = "mobile", variable = DesktoporMobile, command = DM, anchor = "w")
+SMobile.deselect()
+SMobile.place(x = 185, y = 30, width = 80, height = 24)
+
+DesktoporMobilelabel = tkinter.Label(DoMF, text = "Select Desktop/Mobile CSS")
+DesktoporMobilelabel.place(x = 75, y = 0, width = 180, height = 24)
+
+# PrintResult
+
+def printCSS():
+
+    font = ""
+
+    rounding = ""
+
+    MCol = MC.get()
+
+    BGCol = BGC.get()
+
+    NTCol = NTC.get()
+
+    SFont = FontsList.get()
+
+    if SFont == "나눔고딕":
+        font = "url('https://fonts.gstatic.com/s/nanumgothic/v16/PN_3Rfi-oW3hYwmKDpxS7F_z-7rJxHVIsPV5MbNO2rV2_va-Nv6p.52.woff2') format('woff2')"
+
+    elif SFont == "나눔바른고딕":
+        font = "url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff')"
+    
+    elif SFont == "빙그레체":
+        font = "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff')"
+
+    elif SFont == "애터미체":
+        font = "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Atomy-Bold.woff') format('woff')"
+
+    elif SFont == "이롭게바탕체":
+        font = "url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.woff') format('woff')"
+
+    elif SFont == "한돋움체":
+        font = "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHD.woff') format('woff')"
+
+    elif SFont == "한울림체":
+        font = "'https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHU.woff') format('woff')"
+
+    else:
+        font = ""
+
+    Logo = LogoUrl.get()
+
+    Rounding = RoundingList.get()
+
+    if Rounding == "none":
+        rounding = "0px"
+
+    elif Rounding == "harder":
+        rounding = "5px"
+
+    elif Rounding == "hard":
+        rounding = "10px"
+
+    elif Rounding == "normal":
+        rounding = "15px"
+
+    elif Rounding == "soft":
+        rounding = "20px"
+
+    elif Rounding == "softer":
+        rounding = "25px"
+
+    else:
+        rounding = "0px"
+
+    SVB = ViewersBefore.get()
+
+    SVA = ViewersAfter.get()
+
+    PFImgP = ProfileImg.get()
+
+    DoM = DesktoporMobile.get()
+
+    dir = filedialog.askdirectory(title = "CSS File Directory")
+
+    if DoM == "desktop":
+        CSS_Desktop = open(str(dir) + "/CSS(Desktop).txt", "w")
+        CSS_Desktop.write(":root {\n"
+                          "    --color-0: " + str(MCol) + ";\n"
+                          "    --color-1: " + str(BGCol) + ";\n"
+                          "    --color-2: " + str(NTCol) + ";\n"
+                          "    --font: " + str(font) + ";\n"
+                          "    --logo-url: " + str(Logo) + ";\n"
+                          "    --rounding: " + str(rounding) + ";\n"
+                          "    --viewers-b: " + str(SVB) + ";\n"
+                          "    --viewers-a: " + str(SVA) + ";\n"
+                          "}\n\n"
+                          "@font-face {\n"
+                          "    font-family: font;\n"
+                          "    src: var(--font);\n"
+                          "    font-weight: normal;\n"
+                          "    font-style: normal;\n"
+                          "}\n\n"
+                          "*:focus {\n"
+                          "    outline: none !important;\n"
+                          "}\n\n"
+                          "html {\n"
+                          "    background: var(--color-1);\n"
+                          "    height: auto !important;\n"
+                          "}\n\n"
+                          "body {\n"
+                          "    background: transparent;\n"
+                          "    font-family: font;\n"
+                          "    height: auto !important;\n"
+                          "}\n\n"
+                          "header .row>div:nth-child(1)>a {\n"
+                          "    display: block;\n"
+                          "    width: 200px;\n"
+                          "    height: 50px;\n"
+                          "    background: url(var(--logo-url)) no-repeat;\n"
+                          "    background-size: auto 50px;\n"
+                          "}\n\n"
+                          "header #right-search-form>input[type=text] {\n"
+                          "    border: 3px solid var(--color-0);\n"
+                          "    border-radius: var(--rounding)\n;"
+                          "}\n\n"
+                          "i.fa.fa-search {\n"
+                          "    color: var(--color-0);\n"
+                          "}\n\n")
+
+        CSS_Desktop.close
+
+    else:
+        CSS_Mobile = open(str(dir) + "/CSS(Mobile).txt", "w")
+        CSS_Mobile.write(":root {\n"
+                         "    --color-0: " + str(MCol) + ";\n"
+                         )
+
+        CSS_Mobile.close
+
+CSSF = tkinter.Frame(GUI)
+CSSF.place(x = 350, y = 350, width = 350, height = 70)
+
+configCSS = tkinter.Button(CSSF, text = "Make CSS", command = printCSS, takefocus = 0)
+configCSS.place(x = 138, y = 27, width = 74, height = 30)
+
+GUI.mainloop()
