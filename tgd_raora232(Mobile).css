@@ -1,0 +1,550 @@
+@font-face {
+    font-family: 'Goyang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 배경 */
+
+html {
+
+   background: linear-gradient(135deg, #ffbad6, #b2e2ff);
+   height: auto;
+
+}
+
+body {
+
+    background: #FFFFFF;
+    font-family: 'Goyang';
+}
+
+
+
+/* 로고 */
+
+header>#header-area>a>h1 {
+
+    background: url(https://user-images.githubusercontent.com/21300436/57970493-be98ac80-79bc-11e9-9997-0a2baafa449d.png) no-repeat;
+
+    background-size: auto 32px;
+
+}
+
+/* 게시글 관련부분 */
+
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+  width: 120px !important;
+}
+
+#article-list #article-list-category {
+  border-top: 2px solid #b3d5f2;
+  background: white;
+}
+
+#article-list #article-list-category>a {
+  background: white;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+  background-color: #b3d5f2;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+  color: #b3d5f2;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+  color: #b3d5f2;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+  background-color: #B6E3E9;
+  border-color: #B6E3E9;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color: #b3d5f2;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  color: #b3d5f2;
+}
+
+#article-content-wrapper>.header {
+  border-top: 2px solid #b3d5f2;
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+  color: #b3d5f2;
+}
+
+#article-info>h2 {
+  font-weight: bold;
+}
+
+#article-info>h2>span.category {
+  color: #b3d5f2 !important;
+}
+
+#article-reply-area>.header h5 {
+  color: #b3d5f2;
+}
+
+#main .menu-wrapper>a {
+  padding: 0.5em 1.4em 0.5em 0.7em !important;
+}
+
+a {
+  color: #b3d5f2;
+}
+
+span.a-badge i.fa.fa-info-circle {
+  color: #B6E3E9;
+}
+
+/* footer */
+
+#article-list>.article-list-row {
+  border-right: none;
+}
+
+#article-list #article-list-menu {
+  box-sizing: border-box;
+  width: unset;
+  margin: 20px;
+}
+
+#article-list #boardSearchForm {
+  padding-bottom: 20px;
+  height: unset;
+}
+
+.btn-primary {
+  background: #FDAFAB !important;
+}
+
+/* 검색 창 */
+
+
+
+header > #header-search-bar #header-search-input {
+
+    border: 2px solid #FFFFFF;
+
+    border-radius: 15px;
+
+}
+
+
+
+/* 검색 버튼 */
+
+
+
+header>#header-area>#header-search-link {
+
+    color: #FFFFFF;
+
+}
+
+
+
+header > #header-search-bar #header-search-btn {
+
+    color: #FFFFFF;
+
+}
+
+
+
+/* 트게더 로고 배너 */
+
+
+
+header {
+
+    border-bottom: 4px solid #FFFFFF;
+
+    background: linear-gradient(135deg, #ffbad6, #b2e2ff);
+
+}
+
+
+
+/* 상단 배너 광고 뱃지 */
+
+
+
+#header-top-notice strong.notice-badge {
+
+    background: #b3d5f2;
+
+}
+
+
+
+/* 접속자 수 */
+
+.fa-user:before{
+    color: #b3d5f2;
+}
+
+#viewers{
+    color: #b3d5f2;
+}
+#board-info #viewers-area .fa-user:before {
+    content: url(https://user-images.githubusercontent.com/21300436/55848962-d3964a80-5b89-11e9-8db2-4448ef92da09.png);
+
+}
+
+
+#board-info #viewers-area {
+
+    color: #b3d5f2;
+
+}
+
+
+
+#board-info #viewers-area #viewers:before {
+
+    content: "솜 조각 ";
+    color: #b3d5f2;
+    cursor: text;
+
+}
+
+#board-info #viewers-area #viewers:after {
+
+    content: " 마리 흩날리는 중";
+    color: #b3d5f2;
+    cursor: text;
+
+}
+
+
+/* 메인 배너 글 공지 */
+
+#article-list>.article-list-row.notice {
+
+    background-color: #FFF8F7;
+
+}
+
+/* 인기글 버튼 */
+
+
+
+#article-list-menu>.btn.best {
+
+    border-radius: 15px;
+
+}
+
+
+
+/* 설정 버튼 */
+
+
+
+#article-list-menu>.btn.cog {
+
+    border-radius: 15px;
+    color: #b3d5f2;
+}
+
+
+/* 글 추천 수 */
+
+#article-list>.article-list-row>.item>.list-header>span {
+
+    background-color: #b3d5f2;
+
+}
+
+/* 글 쓰기 버튼 */
+
+
+
+#article-list-menu>.btn.write {
+
+    border-radius: 15px;
+    background-color: #b3d5f2;
+}
+
+/* 목록 버튼 */
+
+
+
+.btn {
+
+    border-radius: 15px;
+}
+
+
+
+.btn-group-sm>.btn, .btn-sm {
+
+    border-radius: 15px;
+    background-color: #b3d5f2;
+}
+
+/* 댓글 수 */
+
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+
+    color: #b3d5f2;
+
+}
+
+/* 추천 버튼 */
+
+.vote-btn[data-type="up"] {
+
+  border: none;
+
+  font-size: 0;
+
+  outline: 0 !important; 
+
+}
+
+
+
+.vote-btn[data-type="up"]:hover {
+
+  background: none !important;
+
+}
+
+
+
+.vote-btn[data-type="up"]::before {
+
+  display: inline-block;
+
+  background: white;
+  color: #FDAFAB;
+  border: solid  #FDAFAB 1px;
+
+  float: left;
+
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 60px;
+
+  font-size: 26pt;
+
+  content: "\f164";
+
+  padding-top: 17px;
+
+  padding-left: 2px;
+
+  font: normal 22px/1 FontAwesome;
+
+  -moz-transition:color .2s ease;
+
+  -o-transition:color .2s ease;
+
+  -ms-transition:color .2s ease;
+
+  -webkit-transition:color .2s ease;
+
+  transition:color .2s ease;
+
+}
+
+
+
+.vote-btn[data-type="up"]:hover::before {
+
+  background:  #FDAFAB;
+
+  color: white;
+
+}
+
+
+
+.vote-btn[data-type="up"] span {
+
+  float: left;
+
+  padding-top: 14px;
+
+  padding-left: 15px;
+
+  font-size: 22px;
+
+  color:  #FDAFAB;
+
+}
+
+/* 비추 버튼 */
+
+
+.vote-btn[data-type="down"] {
+
+  border: none;
+
+  font-size: 0;
+
+  outline: 0 !important; 
+
+}
+
+
+
+.vote-btn[data-type="down"]:hover {
+
+  background: none !important;
+
+}
+
+
+
+.vote-btn[data-type="down"]::before {
+
+  display: inline-block;
+ 
+  background: white;
+  color: #B6E3E9;
+  border: solid  #B6E3E9 1px;
+
+  float: left;
+
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 60px;
+
+  font-size: 26pt;
+
+  content: "\f164";
+
+  padding-top: 17px;
+
+  padding-left: 2px;
+
+  font: normal 22px/1 FontAwesome;
+
+  -moz-transition:color .2s ease;
+
+  -o-transition:color .2s ease;
+
+  -ms-transition:color .2s ease;
+
+  -webkit-transition:color .2s ease;
+
+  transition:color .2s ease;
+
+}
+
+
+
+.vote-btn[data-type="down"]:hover::before {
+
+  background:  #B6E3E9;
+
+  color: white;
+
+}
+
+
+
+.vote-btn[data-type="down"] span {
+
+  float: left;
+
+  padding-top: 14px;
+
+  padding-left: 15px;
+
+  font-size: 22px;
+
+  color:  #B6E3E9;
+
+}
+/* 작성자 (스트리머=빨간 캠코더) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+    content: url(https://static-cdn.jtvnw.net/badges/v1/4b8fed5d-d286-465c-be90-73e49f1cc80a/3?raw=true);
+    width: 18px;
+}
+
+/* 작성자 (게시판 관리자=도끼) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/globalmod.png"] {
+    display: none;
+}
+
+/* 작성자 (트게더 관리자=진은검) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    content: url(https://static-cdn.jtvnw.net/badges/v1/6404d4cc-a47b-465d-8547-d2770218ee4f/3?raw=true);
+    width: 18px;
+}
+
+.fr-command.fr-emoticon[data-param1=JKanStyle] > img { 
+     width: 20px !important; 
+     height: 20px !important; 
+     padding-left: 20px;
+     background-image: url(https://cdn.discordapp.com/attachments/569053483492442122/579152989802070019/12_112.png);
+     background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable > img[alt=JKanStyle]{ 
+     width: 28px !important; 
+     height: 28px !important; 
+     padding-left: 28px;
+     background-image: url(https://cdn.discordapp.com/attachments/569053483492442122/579152989802070019/12_112.png);
+     background-size: 100%; 
+}
+
+.fr-command.fr-emoticon[data-param1=OptimizePrime] > img { 
+     width: 20px !important; 
+     height: 20px !important; 
+     padding-left: 20px;
+     background-image: url(https://cdn.discordapp.com/attachments/569053483492442122/579152993430274077/5_1.png);
+     background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable > img[alt=OptimizePrime]{ 
+     width: 28px !important; 
+     height: 28px !important; 
+     padding-left: 28px;
+     background-image: url(https://cdn.discordapp.com/attachments/569053483492442122/579152993430274077/5_1.png);
+     background-size: 100%; 
+}
+
+.fr-command.fr-emoticon[data-param1=StoneLightning] > img { 
+     width: 20px !important; 
+     height: 20px !important; 
+     padding-left: 20px;
+     background-image: url(https://cdn.discordapp.com/attachments/569053483492442122/579152995854450699/10_112.png);
+     background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable > img[alt=StoneLightning]{ 
+     width: 28px !important; 
+     height: 28px !important; 
+     padding-left: 28px;
+     background-image: url(https://cdn.discordapp.com/attachments/569053483492442122/579152995854450699/10_112.png);
+     background-size: 100%; 
+}
