@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+html {
+    background: #ffa64c80;
+}
+
+body {
+    background: transparent;
+    font-family: 'Binggrae';
+}
+
+header .row>div:nth-child(1)>a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: url(https://cdn.discordapp.com/attachments/585807659417075732/586382620515106852/bitcoin_PNG17.png) no-repeat;
+    background-size: auto 50px;
+}
+
+header .row>div:nth-child(1)>a>img {
+  display: none;
+}
+
+
+header #right-search-form>input[type=text] {
+    border: 3px solid #ff8000;
+    border-radius: 25px;
+}
+
+header #right-search-form>#right-search-btn {
+    color: #ff8000;
+}
+
+header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame {
+    border-radius: 25px;
+}
+
+header #header-bar>.row {
+    border: 3px solid #ff8000;
+}
+
+.dropdown-menu>li>a {
+    transition: .1s;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.05);
+    transition: .1s;
+}
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border-radius: 15px;
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+header #header-bar #header-top-notice strong.notice-badge {
+    background: #ffa64c;
+}
+
+#main .menu-wrapper>a {
+    border: none;
+}
+
+#main .menu-wrapper {
+    border: none;
+}
+
+#main .menu-wrapper>.header {
+    border: 3px solid #ff8000;
+    border-radius: 25px;
+    background: #ffffff;
+    color: #ffa64c;
+}
+
+#main .menu-wrapper>.header>a {
+    color: #ffa64c;
+}
+
+#main .menu-wrapper>a {
+    background: none;
+    color: #ff8000;
+}
+
+#main .menu-wrapper .spacer {
+    background: none;
+    height: 0px;
+}
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    display: none;
+}
+
+#main #main-content>div.frame {
+    border: 3px solid #ff8000;
+}
+
+#board-info {
+    overflow: visible;
+}
+
+#board-info h1 {
+    margin-left: 105px;
+    border-bottom: 1px solid #ff8000;
+}
+
+#board-info #board-info-bottom {
+    margin-left: 105px;
+}
+
+#board-info h1>a {
+    font-weight: 700;
+    font-size: 0;
+}
+
+#board-info h1>a:before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    background-size: 100px auto;
+    top: -10px;
+    background-image: url(https://cdn.discordapp.com/attachments/585807659417075732/586028694301310976/bitcoin_PNG16.png);
+    border-radius: 100px;
+    left: 30px;
+    z-index: 1;
+}
+
+#main .menu-wrapper>a>em {
+    color: #ff8000;
+}
+
+#main .menu-wrapper>a>i.fa.fa-square {
+    color: #ff8000;
+}
+
+#main .menu-wrapper>a.more {
+    color: #ff8000;
+}
+
+#main .menu-wrapper>a:hover {
+    background: none;
+}
+
+/* 메인 배너 게시판 접속자 수 */
+
+#board-info #viewers-area {
+    color: #ff8000;
+}
+
+#board-info #viewers-area #viewers:before {
+    content: "가상화폐 ";
+}
+
+#board-info #viewers-area #viewers:after {
+    content: "00% 떡상중";
+}
+
+#article-list #article-list-category {
+    background: none;
+    border: 3px solid #ff8000;
+    border-radius: 25px;
+}
+
+#article-list #article-list-category>a {
+    background: none;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
+    background: #ffa64c80;
+}
+
+#article-list #article-list-category>a:nth-child(1) {
+    border-radius: 25px 0 0 25px;
+}
+
+#article-list>.article-list-row {
+    border: solid 1px #ff8000;
+    border-radius: 25px;
+    margin: 4px 0;
+}
+
+#article-list>.article-list-row.notice {
+    background-color: #ffa64c80;
+}
+
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
+    border: 0;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer {
+    text-align: right;
+    border-left: none;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: #ff8000;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+    color: #ff8000;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+    background: #ff8000;
+}
+
+#article-list>.article-list-row:hover {
+    background: #ffa64c80;
+}
+
+#article-list #article-option-area {
+    right: 16px;
+    top: 2px;
+}
+
+#article-list #article-option-area>#article-option-area-toggle-btn {
+     border-radius: 20px;
+}
+
+i.fa.fa-home {
+    color: #ff8000;
+}
+
+#article-list>.article-list-row:hover>.item>.list-header.v0>span {
+    background: none;
+    color: #00000000;
+}
+
+#article-content-wrapper>.header {
+    border-top: solid 2px #ff8000;
+}
+
+#main .menu-wrapper>a.schedule-link>.time {
+    color: #ff8000;
+}
+
+#article-list-row-1561275981 > div > div.list-title > a {
+    display: none;
+}
