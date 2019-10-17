@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'KHNPHU';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHU.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    overflow: hidden;
+}
+
+body:before {
+    font: 14px 'KHNPHU';
+    display: block;
+    content: '이 곳에 메시지를 입력하세요.';
+    color: #00000080;
+    padding: 0.2rem 0 0 0.5rem;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.8rem;
+    width: calc(100% - 2.0rem);
+    height: 1.0rem;
+    background: #f5f5dc;
+    border-radius: 0.25rem;
+    z-index: 1000;
+    cursor: text;
+}
+
+#log {
+    font: 0.8em 'KHNPHU';
+    word-spacing: -2px !important;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    padding: 0 0.5em 0.1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#log > div {
+    padding: 0.2em 0.5em;
+    margin: -0.3em 0.3em 0.7em 0.3em;
+    animation: none;
+}
+
+#log > [class=''] {
+    color: #ffffff;
+}
+.meta {
+    margin-right: -0.5em;
+    font-weight: 700;
+    color: inherit !important;
+}
+
+.message {
+    line-height: 1.5em;
+    margin-top: 0.9em;
+    font-weight: 400;
+}
+
+.deleted {
+    visibility: hidden;
+}
+
+.badge, .colon, .name, .message {
+    vertical-align: middle;
+}
+
+.badge {
+    display: none;
+}
+
+.name {
+    margin-right: 0.7em;
+}
+
+.name:before {
+    content: "[";
+}
+
+.name:after {
+    content: "]";
+}
+
+.broadcaster {
+    color: #ff7777;
+}
+
+.badge {
+    margin-right: 0.3em;
+    height: 1em;
+}
+
+.colon {
+    display: none;
+}
+
+.message > img {
+    height: 1em;
+}
+
+.emote_wrap {
+    position: relative;
+}
+
+.emoticon {
+    height: 24px;
+    vertical-align: middle;
+    margin: -0.1em 0;
+    image-rendering: pixelated;
+}
+
+img.badge.broadcaster-icon {
+    display: none;
+}
+
+.moderator.partner {
+    display: none;
+}
+
+img[src="//static-cdn.jtvnw.net/emoticons/v1/300481728/1.0"] {
+    animation: Hi 1s ease 2;
+}
+
+@keyframes Hi {
+    0% {
+        transform: translateY(0em);
+    }
+    20% {
+        transform: translateY(-0.3em);
+    }
+    40% {
+        transform: translateY(0em);
+    }
+    60% {
+        transform: translateY(-0.3em);
+    }
+    80% {
+        transform: translateY(0em);
+    }
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+img[src="//static-cdn.jtvnw.net/emoticons/v1/1631741/1.0"] {
+    animation: Thunder 0.5s ease 2;
+}
+
+@keyframes Thunder {
+    0% {
+        filter: brightness(1) blur(0em);
+        transform: scale(1);
+    }
+    50% {
+        filter: brightness(3) blur(0.03em);
+        transform: scale(1.25);
+    }
+    100% {
+        filter: brightness(1) blur(0em);
+        transform: scale(1);
+    }
+}
