@@ -120,3 +120,47 @@ img.badge.broadcaster-icon {
 .moderator.partner {
     display: none;
 }
+
+img[src="https://static-cdn.jtvnw.net/emoticons/v1/300481728/1.0"] {
+    animation: Hi 1s ease 2;
+}
+
+@keyframes Hi {
+    0% {
+        transform: translateY(0em);
+    }
+    20% {
+        transform: translateY(-0.3em);
+    }
+    40% {
+        transform: translateY(0em);
+    }
+    60% {
+        transform: translateY(-0.3em);
+    }
+    80% {
+        transform: translateY(0em);
+    }
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+img[src="https://static-cdn.jtvnw.net/emoticons/v1/1631741/1.0"] {
+    animation: Thunder 0.5s ease 2;
+}
+
+@keyframes Thunder {
+    0% {
+        filter: brightness(1) blur(0em);
+        transform: scale(1);
+    }
+    50% {
+        filter: brightness(3) blur(0.03em);
+        transform: scale(1.25);
+    }
+    100% {
+        filter: brightness(1) blur(0em);
+        transform: scale(1);
+    }
+}
