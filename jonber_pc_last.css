@@ -16,7 +16,7 @@ html {
 
 body {
     background: transparent;
-    height: auto;
+    height: auto !important;
     font-family: 'Binggrae';
 }
 
