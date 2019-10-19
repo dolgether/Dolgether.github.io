@@ -11,6 +11,7 @@
 
 html {
     background: linear-gradient(45deg, #FFC0B0, #FECFAE, #FDDDAB, #FBECA9, #FAFAA6, #DEF7BA, #C5EAB1, #9FD9A4, #9ED2B2, #9CCBC0, #9BC3CE, #99BCDC, #98B5EA, #96A1E7, #969ADC, #9793D2, #978DC7, #9886BD, #987FB2);
+    height: auto;
 }
 
 body {
