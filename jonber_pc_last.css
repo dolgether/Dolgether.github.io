@@ -21,26 +21,6 @@ body {
     font-family: 'Binggrae';
 }
 
-body:after {
-    content: url(https://cdn.discordapp.com/attachments/599950614730113034/602341336972001298/3.png);
-    position: absolute;
-    left: calc(50% - 150px);
-    top: 110px;
-}
-
-header:before {
-    display: block;
-    width: 100%;
-    height: 90px;
-    background: url(https://cdn.discordapp.com/attachments/599950614730113034/602321557108424704/2.png) no-repeat #ffa64c;
-    background-position: center center;
-    background-size: auto 101px;
-    position: relative;
-    top: -6px;
-    content: "";
-    margin-bottom: 50px;
-}
-
 header .row>div:nth-child(1)>a {
     display: block;
     width: 200px;
