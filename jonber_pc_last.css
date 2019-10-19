@@ -9,15 +9,6 @@
     outline: none !important;
 }
 
-html {
-    background: #ffa64c80;
-}
-
-body {
-    background: transparent;
-    font-family: 'Binggrae';
-}
-
 body:after {
     content: url(https://cdn.discordapp.com/attachments/599950614730113034/602341336972001298/3.png);
     position: absolute;
