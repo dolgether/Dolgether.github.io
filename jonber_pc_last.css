@@ -22,12 +22,12 @@ body {
 }
 
 header #right-search-form>input[type=text] {
-    border: 3px solid #ff8000;
+    border: 3px solid #90d034;
     border-radius: 25px;
 }
 
 header #right-search-form>#right-search-btn {
-    color: #ff8000;
+    color: #90d034;
 }
 
 header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame {
@@ -35,7 +35,7 @@ header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame {
 }
 
 header #header-bar>.row {
-    border: 3px solid #ff8000;
+    border: 3px solid #90d034;
 }
 
 .dropdown-menu>li>a {
@@ -78,7 +78,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #main .menu-wrapper>.header {
-    border: 3px solid #ff8000;
+    border: 3px solid #90d034;
     border-radius: 25px;
     background: #ffffff;
     color: #ffa64c;
@@ -90,7 +90,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 #main .menu-wrapper>a {
     background: none;
-    color: #ff8000;
+    color: #90d034;
 }
 
 #main .menu-wrapper .spacer {
@@ -103,7 +103,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 #main #main-content>div.frame {
-    border: 3px solid #ff8000;
+    border: 3px solid #90d034;
 }
 
 #board-info {
@@ -111,19 +111,19 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 #board-info h1 {
-    border-bottom: 1px solid #ff8000;
+    border-bottom: 1px solid #90d034;
 }
 
 #main .menu-wrapper>a>em {
-    color: #ff8000;
+    color: #90d034;
 }
 
 #main .menu-wrapper>a>i.fa.fa-square {
-    color: #ff8000;
+    color: #90d034;
 }
 
 #main .menu-wrapper>a.more {
-    color: #ff8000;
+    color: #90d034;
 }
 
 #main .menu-wrapper>a:hover {
@@ -133,20 +133,20 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 /* 메인 배너 게시판 접속자 수 */
 
 #board-info #viewers-area {
-    color: #ff8000;
+    color: #90d034;
 }
-
+/*
 #board-info #viewers-area #viewers:before {
-    content: "가상화폐 ";
+    content: "";
 }
-
+*/
 #board-info #viewers-area #viewers:after {
-    content: "00% 떡상중";
+    content: "00% 떡상 가즈아ㅏㅏㅏㅏ";
 }
 
 #article-list #article-list-category {
     background: none;
-    border: 3px solid #ff8000;
+    border: 3px solid #90d034;
     border-radius: 25px;
 }
 
@@ -163,7 +163,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 #article-list>.article-list-row {
-    border: solid 1px #ff8000;
+    border: solid 1px #90d034;
     border-radius: 25px;
     margin: 4px 0;
 }
@@ -182,15 +182,15 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-    color: #ff8000;
+    color: #90d034;
 }
 
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
-    color: #ff8000;
+    color: #90d034;
 }
 
 #article-list>.article-list-row>.item>.list-header>span {
-    background: #ff8000;
+    background: #90d034;
 }
 
 #article-list>.article-list-row:hover {
@@ -207,7 +207,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 }
 
 i.fa.fa-home {
-    color: #ff8000;
+    color: #90d034;
 }
 
 #article-list>.article-list-row:hover>.item>.list-header.v0>span {
@@ -216,9 +216,9 @@ i.fa.fa-home {
 }
 
 #article-content-wrapper>.header {
-    border-top: solid 2px #ff8000;
+    border-top: solid 2px #90d034;
 }
 
 #main .menu-wrapper>a.schedule-link>.time {
-    color: #ff8000;
+    color: #90d034;
 }
