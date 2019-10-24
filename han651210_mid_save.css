@@ -1,0 +1,57 @@
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    display: none;
+}
+
+#article-list #article-list-category {
+    background: #ffffff;
+    border-top: 2px solid #ff6781;
+}
+
+#article-list #article-list-category>a {
+    background: #ffffff;
+}
+
+.fa-home:before {
+    color: #ff6781;
+}
+
+html {
+    background: #ffe0e5;
+}
+
+body {
+    background: transparent;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
+    background: #ffd5dc;
+}
+
+#article-list>.article-list-row.notice {
+    background: #ffd5dc;
+}
+
+#article-list>.article-list-row.notice:hover {
+    background: #ffb8c6;
+}
+
+#article-list>.article-list-row>.item>.list-header {
+    border-left: none;
+}
+
+#article-list>.article-list-row:hover {
+    background: #ffe0e5;
+}
+
+#article-list>.article-list-row:hover>.item>.list-header.v0>span {
+    background: #ffe0e5;
+    color: #ffe0e5;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: #ff6781;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+    color: #ff6781;
+}
