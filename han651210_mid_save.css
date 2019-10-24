@@ -71,3 +71,15 @@ header #header-bar>.row {
     content: "\f002";
     color: #ff6781;
 }
+
+header .row>div:nth-child(1)>a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: url(https://cdn.discordapp.com/attachments/599950614730113034/636866747550400520/jgd.png) no-repeat;
+    background-size: auto 50px;
+}
+
+header .row>div:nth-child(1)>a>img {
+    display: none;
+}
