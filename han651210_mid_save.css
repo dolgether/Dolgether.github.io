@@ -83,3 +83,43 @@ header .row>div:nth-child(1)>a {
 header .row>div:nth-child(1)>a>img {
     display: none;
 }
+
+header #header-bar #header-top-notice strong.notice-badge {
+    background: #ff6781;
+}
+
+#main .menu-wrapper>.header {
+    background: #ff6781;
+}
+
+#main .menu-wrapper .spacer {
+    height: 0px;
+}
+
+#main .menu-wrapper>a>em {
+    color: #ffb8c6;
+}
+
+.fa-square:before {
+    color: #ffb8c6;
+}
+
+span.a-badge i.fa.fa-info-circle {
+    color: #ff6781;
+}
+
+.fa-commenting-o:before {
+    color: #000000;
+}
+
+#article-list>.article-list-row {
+    border-right: none;
+}
+
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
+    border-bottom: 1px solid #ffe0e5;
+}
+
+#article-list>.article-list-row.notice>.item>.list-checkbox, #article-list>.article-list-row.notice>.item>.list-header, #article-list>.article-list-row.notice>.item>.list-category, #article-list>.article-list-row.notice>.item>.list-title, #article-list>.article-list-row.notice>.item>.list-blocked, #article-list>.article-list-row.notice>.item>.list-time {
+    border-bottom: 1px solid #ffd5dc;
+}
