@@ -59,12 +59,14 @@ body {
 
 header #right-search-form>input[type=text] {
     border: 3px solid #ff6781;
+    border-radius: 20px;
 }
 
 header #header-bar>.row {
     border-top: 5px solid #ff6781;
-    border-bottom: none;
+    border-bottom: 3px solid #ff6781;
     border-right: none;
+    border-radius: 0 20px;
 }
 
 .fa-search:before {
@@ -90,6 +92,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 #main .menu-wrapper>.header {
     background: #ff6781;
+    border-radius: 20px 0 0 0;
 }
 
 #main .menu-wrapper .spacer {
@@ -102,6 +105,16 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 .fa-square:before {
     color: #ffb8c6;
+}
+
+#main .menu-wrapper {
+    border-right: none;
+    border-bottom: 3px solid #ff6781;
+    border-radius: 20px 0
+}
+
+#main .menu-wrapper>a {
+    background-size: 200% 200% !important;
 }
 
 span.a-badge i.fa.fa-info-circle {
@@ -123,3 +136,72 @@ span.a-badge i.fa.fa-info-circle {
 #article-list>.article-list-row.notice>.item>.list-checkbox, #article-list>.article-list-row.notice>.item>.list-header, #article-list>.article-list-row.notice>.item>.list-category, #article-list>.article-list-row.notice>.item>.list-title, #article-list>.article-list-row.notice>.item>.list-blocked, #article-list>.article-list-row.notice>.item>.list-time {
     border-bottom: 1px solid #ffd5dc;
 }
+
+#main .menu-wrapper>a:nth-last-child(1) {
+    border-radius: 0 0 20px 0;
+}
+
+#main #main-content>div.frame {
+    background: #fff;
+    border-right: none;
+    border-bottom: 3px solid #ff6781;
+    border-top: 5px solid #ff6781;
+    border-radius: 0 20px;
+}
+
+a[href="/all"] { border-left: 8px solid #FFC0B0; border-bottom: 1px solid #FFC0B0 !important; background: linear-gradient(90deg, #FFC0B0 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/all"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/streamer"] { border-left: 8px solid #FECFAE; border-bottom: 1px solid #FECFAE !important; background: linear-gradient(90deg, #FECFAE 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/streamer"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/community"] { border-left: 8px solid #FDDDAB; border-bottom: 1px solid #FDDDAB !important; background: linear-gradient(90deg, #FDDDAB 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/community"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/clips"] { border-left: 8px solid #FBECA9; border-bottom: 1px solid #FBECA9 !important; background: linear-gradient(90deg, #FBECA9 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/clips"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/live/lists"] { border-left: 8px solid #FAFAA6; border-bottom: 1px solid #FAFAA6 !important; background: linear-gradient(90deg, #FAFAA6 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/live/lists"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://battle.dog"] { border-left: 8px solid #DEF7BA; border-bottom: 1px solid #DEF7BA !important; background: linear-gradient(90deg, #DEF7BA 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://battle.dog"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/pr"] { border-left: 8px solid #C5EAB1; border-bottom: 1px solid #C5EAB1 !important; background: linear-gradient(90deg, #C5EAB1 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/pr"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/recruit_new"] { border-left: 8px solid #9FD9A4; border-bottom: 1px solid #9FD9A4 !important; background: linear-gradient(90deg, #9FD9A4 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="http://cast.help/commission/list"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/qna"] { border-left: 8px solid #9ED2B2; border-bottom: 1px solid #9ED2B2 !important; background: linear-gradient(90deg, #9ED2B2 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/qna"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/tip"] { border-left: 8px solid #9CCBC0; border-bottom: 1px solid #9CCBC0 !important; background: linear-gradient(90deg, #9CCBC0 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/tip"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/notice"] { border-left: 8px solid #9BC3CE; border-bottom: 1px solid #9BC3CE !important; background: linear-gradient(90deg, #9BC3CE 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/notice"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/event"] { border-left: 8px solid #99BCDC; border-bottom: 1px solid #99BCDC !important; background: linear-gradient(90deg, #99BCDC 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/event"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/suggestion2"] { border-left: 8px solid #98B5EA; border-bottom: none !important; background: linear-gradient(90deg, #98B5EA 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/suggestion2"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://twitch.tv"] { border-left: 8px solid #96A1E7; border-bottom: 1px solid #96A1E7 !important; background: linear-gradient(90deg, #96A1E7 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://twitch.tv"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://twip.kr"] { border-left: 8px solid #969ADC; border-bottom: 1px solid #969ADC !important; background: linear-gradient(90deg, #969ADC 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://twip.kr"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://www.twitch.tv/creatorcamp/ko-kr"] { border-left: 8px solid #9793D2; border-bottom: 1px solid #9793D2 !important; background: linear-gradient(90deg, #9793D2 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://www.twitch.tv/creatorcamp/ko-kr"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://goo.gl/forms/ALDa2tEqh31kYmCm1"] { border-left: 8px solid #978DC7; border-bottom: none !important; background: linear-gradient(90deg, #978DC7 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://goo.gl/forms/ALDa2tEqh31kYmCm1"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[data-type="header-pc-date"] { border-left: 8px solid #9886BD; border-bottom: 1px solid #9886BD !important; background: linear-gradient(90deg, #9886BD 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; font-size: 10.5px !important; }
+a[class="schedule-link"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[class="schedule-link more"] { border-left: 8px solid #987FB2; border-bottom: none !important; background: linear-gradient(90deg, #987FB2 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[class="schedule-link more"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
