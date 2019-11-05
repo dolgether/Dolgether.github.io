@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'KHNPHU';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHU.woff') format('woff');
+    font-family: 'BinggraeMelona';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@ body, html {
 }
 
 body:before {
-    font: 14px 'KHNPHU';
+    font: 14px 'BinggraeMelona';
     display: block;
     content: '이 곳에 메시지를 입력하세요.';
     color: #00000080;
@@ -30,7 +30,7 @@ body:before {
 }
 
 #log {
-    font: 0.8em 'KHNPHU';
+    font: 0.8em 'BinggraeMelona';
     word-spacing: -2px !important;
     position: absolute;
     bottom: 1.5rem;
