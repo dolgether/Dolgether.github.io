@@ -46,7 +46,7 @@ body:before {
     animation: none;
 }
 
-#log > [class=''] {
+#log {
     color: #ffffff;
 }
 .meta {
