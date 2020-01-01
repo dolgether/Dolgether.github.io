@@ -52,7 +52,7 @@ body:before {
 .meta {
     margin-right: -0.5em;
     font-weight: 700;
-    color: inherit !important;
+    color: #ffffff !important;
 }
 
 .message {
@@ -87,6 +87,10 @@ body:before {
 
 .broadcaster {
     color: #ff7777;
+}
+
+.broadcaster > .meta {
+    color: #ff7777 !important;
 }
 
 .badge {
