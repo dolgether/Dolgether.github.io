@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	letter-spacing: -0.05em !important;
+	background: transparent;
+	font-family: KOMACON;
+}
+header{
+border-bottom: 4px solid #8ca7d0;
+background: #deeafe;
+}
+
+body div:nth-child(6){
+background: #fff;
+}
+
+header>#header-area>a>h1 {
+    background: url(https://dolgether.github.io/doyu_TGDlogo2.png) no-repeat;
+    background-size: 110px auto;
+    display: block;
+    width: 110px;
+    height: 60px;
+    left: calc(50% - 55px);
+    float: left;
+    position: absolute;
+    top: 0px;
+}
+
+header>#header-area>#header-search-link,
+header>#header-area>#header-bar-link,
+header > #header-search-bar #header-close-search-btn,
+header > #header-search-bar #header-search-btn{
+color: #8ca7d0;
+}
+
+header > #header-search-bar #header-search-input{
+border: 2px solid #8ca7d0;
+}
+
+#article-list #article-list-category>a,
+#article-list #article-list-category,
+#article-content-wrapper>.header{
+background: #f0f5fd;
+}
+
+nav#nav{
+background-color: #fff;
+}
+
+#header-top-notice strong.notice-badge,
+#article-list>.article-list-row>.item>.list-header>span,
+.btn-primary,
+nav#nav>.nav-header{
+background: #8ca7d0;
+border: 0;
+}
+
+#article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span{
+color: #5d6d85;
+}
+
+#article-list>.article-list-row>.item>a.list-title>small.comment-count,
+.fa-home,
+nav#nav>#nav-upper>#header-close-bar-link{
+color: #8ca7d0;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover{
+background: #8ca7d0;
+border-color: #8ca7d0;
+}
+
+.pagination>li>a,
+.pagination>li>span{
+color: #8ca7d0;
+border-color: #8ca7d0;
+}
+
+footer{
+background: #f0f5fd;
+}
+
+#viewers{
+color: #5d6d85;
+font-size: 12px;
+font-weight: 500;
+}
+
+#board-info #viewers-area #viewers:before {
+    content: "도청자";
+    font-size: 12px;
+    font-weight: 500;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/582202325347860491/dou_heart.png) no-repeat;
+    background-position: right;
+    padding-right: 13px;
+    margin-right: 1px;
+}
+
+#board-info #viewers-area #viewers:after {
+content: "명";
+cursor: text;
+color: #5d6d85;
+font-size: 12px;
+font-weight: 500;
+}
+
+.fa-user{
+    display: none;
+}
+
+/* 작성자 (스트리머) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/592333375466110986/5a3095e7b798bca5.png?raw=true) !important;
+    width: 18px;
+}
+
+/* 작성자 (트게더 관리자) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/592335072661733436/728a895013f128c8.png?raw=true) !important;
+    width: 18px;
+}
+
+#movetotop {
+    opacity: 1;
+    background: url(https://dolgether.github.io/doyu_up.png);
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+}
+
+#movetotop > img {
+    display: none !important;
+}
+
+#board-info>h1>#board-info-profile-img {
+    width: 70px;
+    height: 70px;
+    content: url(https://dolgether.github.io/doyu_profile_img2.png);
+    position: absolute;
+    top: 180px;
+    left: 20px;
+}
+
+#board-info>h1 {
+    padding: .5em .5em .5em 100px;
+}
+
+#board-info {
+    height: 70px;
+}
+
+#article-list #article-list-category {
+    height: 40px;
+}
+
+#article-list #article-list-category>a.active, #article-list #article-list-category>a:hover {
+    background: #fff;
+    height: 40px;
+}
+
+/* 작성자 (스트리머) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+    content: url(https://dolgether.github.io/doyu_streamer_icon.png) !important;
+    width: 18px;
+}
+
+/* 작성자 (트게더 관리자) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/592335072661733436/728a895013f128c8.png?raw=true) !important;
+    width: 18px;
+}
