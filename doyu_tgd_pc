@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background: linear-gradient(to bottom, #f3f2f0 5%, #ffc8c8);
+    height: auto;
+}
+
+body {
+    letter-spacing: -0.05em !important;
+    background: transparent;
+    font-family: KOMACON;
+}
+
+
+
+header .row>div:nth-child(1)>a {
+float: left;
+position: absolute;
+background:url(https://dolgether.github.io/doyu_TGDlogo2.png) no-repeat;
+background-size: auto 65px;
+display: block;
+width: 163px;
+height: 65px;
+}
+
+header .row>div:nth-child(1)>a img {
+display: none; /*기본 로고 숨김*/
+}
+
+header #header-bar>.row, #main #main-content>div.frame {
+    border-top: 5px solid #839fc9 !important;
+    border: 1px solid #839fc9;
+}
+
+header #right-search-form>input[type=text]{
+border: 3px solid #839fc9;
+}
+
+header #right-search-form>#right-search-btn,
+#article-list>.article-list-row>.item>.list-title>small.comment-count,
+#board-info #board-info-bottom a,
+.fa-home,
+.pagination>li>a, .pagination>li>span{
+color: #839fc9;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span{
+color: #5d6d85;
+}
+
+header #header-bar #header-top-notice strong.notice-badge,
+#article-list>.article-list-row>.item>.list-header>span{
+background: #839fc9;
+}
+
+#article-list #article-list-category {
+    border: 2px solid #839fc9;
+    background: #eef5ff;
+    border-radius: 15px;
+}
+
+article-content-wrapper>.header {
+    border-top: 2px solid #839fc9;
+    background: #eef5ff;
+}
+
+#article-list #article-list-category>a{
+    background: #eef5ff;
+    border-radius: 15px;
+}
+
+.pagination>li>a,
+.pagination>li>span{
+border: 1px solid #839fc9;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span, 
+.pagination>.active>span:focus,
+.pagination>.active>span:hover{
+background: #839fc9;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover{
+border: 1px solid #839fc9;
+}
+
+.btn-primary{
+background: #839fc9;
+border: 1px solid #839fc9;
+}
+
+#viewers{
+color: #5d6d85;
+font-size: 12px;
+font-weight: 500;
+}
+
+#board-info #viewers-area #viewers:before {
+    content: "도청자";
+    font-size: 12px;
+    font-weight: 500;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/582202325347860491/dou_heart.png) no-repeat;
+    background-position: right;
+    padding-right: 13px;
+    margin-right: 1px;
+}
+
+#board-info #viewers-area #viewers:after {
+content: "명";
+cursor: text;
+color: #5d6d85;
+font-size: 12px;
+font-weight: 500;
+}
+
+.fa-user{
+    display: none;
+}
+
+/* 여기부터 추가하는 사항 */
+
+/* 게시글 추천 */
+
+.vote-btn[data-type="up"] {
+    border: none;
+    font-size: 0;
+    outline: 0 !important; 
+}
+
+.vote-btn[data-type="up"]:hover {
+    background: none !important;
+}
+
+.vote-btn[data-type="up"]::before {
+    display: inline-block;
+    background: white;
+    border: solid #839fc9 1px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font: normal 22px/1 FontAwesome;
+    font-size: 26pt;
+    content: "\f164";
+    padding-top:10px;
+    padding-left: 2px;
+    transition:color .2s ease;
+    color: #839fc9
+}
+
+.vote-btn[data-type="up"]:hover::before {
+    background: #839fc9;
+    color: white;
+}
+
+.vote-btn[data-type="up"] span {
+    float: left;
+    padding-top: 14px;
+    padding-left: 15px;
+    font-size: 22px;
+    color: #839fc9;
+}
+
+/* 배너 */
+
+header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame, header #right-search-form>input[type=text] {
+    border-radius: 15px;
+}
+
+/* 좌측 배너 */
+
+#main .menu-wrapper {
+    border: 1px solid #839fc9;
+    border-top: none;
+}
+
+/* 좌측 배너 헤더 */
+
+#main .menu-wrapper>.header {
+    background: #839fc9;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 좌측 배너 이니셜 */
+
+#main .menu-wrapper>a>em {
+    color: #839fc9;
+}
+
+/* 좌측 배너 빈 공간 */
+
+#main .menu-wrapper .spacer {
+    display: none;
+}
+
+/* 좌측 배너 하단 */
+
+#main .menu-wrapper a:nth-last-child(1) {
+    border-radius: 0px 0px 15px 15px;
+}
+
+/* 좌측 배너 점 */
+
+.fa-square:before {
+    color: #839fc9;
+}
+
+/* 작성자 (스트리머) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+    content: url(https://dolgether.github.io/doyu_streamer_icon.png) !important;
+    width: 18px;
+}
+
+/* 작성자 (트게더 관리자) */
+
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/592335072661733436/728a895013f128c8.png?raw=true) !important;
+    width: 18px;
+}
+
+/* 메인 배너 스트리머 이미지 */
+
+#board-info #board-info-profile-img {
+    width: 100px;
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    content: url(https://dolgether.github.io/doyu_profile_img2.png);
+}
+
+/* 메인 배너 헤더 가운데 줄 */
+
+#board-info h1 {
+    border-bottom: 1px solid #839fc9;
+    margin-left: 105px;
+}
+
+#board-info #board-info-bottom {
+    float: right;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
+    border-radius: 15px;
+}
+
+#article-list #article-option-area {
+    right: 25px;
+}
+
+body {
+    animation: snow 20s linear infinite;
+    background-image: url('https://dandegimon.github.io/silgerher/images/sakura1.png'), url('https://dandegimon.github.io/silgerher/images/sakura2.png'), url('https://dandegimon.github.io/silgerher/images/sakura3.png');
+}
+
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+#article-content-wrapper>.header {
+    border-top: 2px solid #839fc9;
+    background: #eef5ff;
+}
+
+#article-content-wrapper>.footer {
+    background: #eef5ff;
+}
+
+
+
+
+/* 마우스 커서 포인터 */
+
+html, body, .fr-popup.emoticons, .fr-top, select.form-control, input[type=checkbox], input[type=radio], .opt {
+    cursor: url(https://dolgether.github.io/doyu_cur_default.png) 0 0, auto !important;
+}
+
+/* 마우스 커서 링크 */
+
+#right-search-form>#right-search-btn, #board-info #board-info-bottom #addFavoriteBtn, #article-list #article-option-area>#article-option-area-toggle-btn, #article-list>.article-list-row>.item>.list-title>.list-writer>span, .reply > .reply-header > .reply-writer.logged, .reply-menu, .btn, .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-view img, .pull-left, a {
+    cursor: url(https://dolgether.github.io/doyu_cur_link.png) 0 0, auto !important;
+}
+
+/* 마우스 커서 텍스트 */
+
+span#viewers, span#viewers:before, span#viewers:after, #article-list #boardSearchForm .form-control, .fr-view, .fr-box.fr-basic.fr-element, input[type='text'] {
+    cursor: url(https://dolgether.github.io/doyu_cur_txt.png) 0 0, auto !important;
+}
+
+#movetotop {
+    opacity: 1;
+    background: url(https://dolgether.github.io/doyu_up.png);
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+}
+
+#movetotop > img {
+    display: none !important;
+}
+
+#article-list {
+    background-image: url(https://dolgether.github.io/doyu_articlebg_img.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 70% 85%;
+}
+
+#article-list>.article-list-row:hover {
+    background: #fafafa80;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.05);
+    transition: .1s;
+}
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border-radius: 15px;
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+#article-list>.article-list-row.notice {
+    background-color: #dbe5fb;
+}
+
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
+    border: 0;
+}
+
+#article-list>.article-list-row.notice {
+    border-radius: 20px;
+    margin: 4px 0;
+}
+
+#article-list>.article-list-row {
+    border: 1px solid #dbe5fb;
+    border-radius: 20px;
+    margin: 4px 0;
+}
