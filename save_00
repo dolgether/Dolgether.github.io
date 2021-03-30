@@ -44,51 +44,99 @@ header #right-search-form>input[type=text]:hover {
     font-size: 0px;
 }
 
-body:before {
+#main .menu-wrapper:hover:after {
     content: '';
     background: url(https://cdn.discordapp.com/attachments/577710273994162176/583284844205703183/2.png) no-repeat;
-    width: 1094px;
-    height: 350px;
+    width: 31px;
+    height: 10px;
     position: absolute;
-    top: calc(100% - 350px);
+    top: 0px;
     left: 0px;
     background-position-y: 100%;
     animation: Bbol 10s linear infinite;
+    background-size: 31px auto;
+    transform: scaleX(-1);
+    z-index: 0;
 }
 
 @keyframes Bbol {
     0% {
-        background-size: 0px;
+        transform: scaleX(-1);
+        left: 0px;
+        top: 0px;
+    }
+    40% {
+        transform: scaleX(-1);
+        left: 145px;
+        top: 0px;
+    }
+    40.1% {
+        transform: scaleX(1);
+        left: 145px;
+        top: 0px;
     }
     50% {
-        background-size: 1094px;
+        transform: scaleX(1);
+        left: 145px;
+        top: 40px;
+    }
+    90% {
+        transform: scaleX(1);
+        left: 0px;
+        top: 40px;
     }
     100% {
-        background-size: 0px;
+        transform: scaleX(1);
+        left: 0px;
+        top: 0px;
     }
 }
+        
+    
 
 body:after {
     content: '';
-    top: 0px;
+    top: 10px;
     left: calc(50% - 250px);
-    width: 500px;
-    height: 500px;
+    width: 0px;
+    height: 0px;
     background: url(https://cdn.discordapp.com/attachments/577710273994162176/826048283935244299/IMG_1661.jpg) no-repeat;
     position: absolute;
-    background-size: 0px;
+    background-size: 500px;
     background-position: top center;
-    animation: OMG 30s linear infinite;
+    animation: OMG 100s linear;
 }
 
 @keyframes OMG {
     0% {
-        background-size: 0px;
+        width: 0px;
+        height: 0px
     }
-    50% {
-        background-size: 500px;
+    60% {
+        width: 0px;
+        height: 0px
+    }
+    60% {
+        width: 500px;
+        height: 500px
+    }
+    63% {
+        width: 500px;
+        height: 500px
+    }
+    63% {
+        width: 0px;
+        height: 0px
     }
     100% {
-        background-size: 0px;
+        width: 0px;
+        height: 0px
     }
+}
+
+#article-content-wrapper>.vote-area {
+    background-image: url(https://cdn.discordapp.com/attachments/577710273994162176/826401611689492540/1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 100%;
 }
