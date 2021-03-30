@@ -1,3 +1,69 @@
 #board-info h1:hover {
-    text-align: left;
+    text-align: right;
+}
+
+header .row>div:nth-child(1)>a:hover {
+    transform: rotate(1440deg);
+    background: url(https://static.heroesofthestorm.com/images/legacy/logo-heroes-icon-b89d704178.png) no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+#article-list>.article-list-row:hover {
+    transform: scaleX(-1);
+}
+
+#article-info, #article-content-wrapper, #article-reply-area {
+    transform: scaleX(-1);
+}
+
+#article-info .article-profile-img:hover {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/826401615589539930/2.png);
+}
+
+header #right-search-form>input[type=text]:hover {
+    background-image: url();
+    width: 300px;
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#board-info h1>a:hover:after {
+    content: '🌹🌹🌹';
+    font-size: 25px !important;
+}
+
+#board-info #board-info-profile-img:hover {
+    content: url(https://blog.kakaocdn.net/dn/tGEnC/btqS3I0EXAY/0sOLQZj4kxYwNVu6A3Obb1/img.gif);
+    width: 600px;
+    height: 600px;
+}
+
+#board-info h1>a:hover {
+    font-size: 0px;
+}
+
+body:before {
+    content: '';
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/583284844205703183/2.png) no-repeat;
+    width: 1094px;
+    height: 350px;
+    position: absolute;
+    top: calc(100% - 350px);
+    left: 0px;
+    background-position-y: 100%;
+    animation: Bbol 10s linear;
+}
+
+@keyframes Bbol {
+    0% {
+        background-size: 0px;
+    }
+    50% {
+        background-size: 1094px;
+    }
+    100% {
+        background-size: 0px;
+    }
 }
