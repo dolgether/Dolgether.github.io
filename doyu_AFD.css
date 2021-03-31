@@ -155,6 +155,7 @@ body:after {
 
 body:before {
     content: '만　　우　　절';
+    transform: scaleX(-1);
     font-size: 50px;
     text-align: center;
     width: 100%;
