@@ -27,9 +27,9 @@ header .row>div:nth-child(1)>a:hover {
 }
 
 header #right-search-form>input[type=text]:hover {
-    background-image: url();
+    background-image: url(https://cdn.discordapp.com/attachments/577710273994162176/826740765312417792/869fb50fdeccf45e.png);
     width: 300px;
-    background-size: 100px auto;
+    background-size: auto 30px;
     background-repeat: no-repeat;
     background-position: right;
 }
